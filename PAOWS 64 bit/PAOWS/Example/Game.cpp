@@ -14,8 +14,6 @@ private:
 	Sprite* player1;
 	Sprite* player2;
 
-	maths::Rectangle *ballrec;
-
 	Sprite* Player1win;
 	Sprite* Player2win;
 
@@ -59,9 +57,8 @@ public:
 
 		//ball
 		ball = new Sprite(-0.125, 0, 0.25, 0.25, maths::vec4(0, 1, 0, 1));
-		ballrec =  new maths::Rectangle(ball->position.x, ball->position.y, 10, 10);
 
-		ballDirection = new vec2(0.2, 0.18f);
+		ballDirection = new vec2(0.4, 0.38f);
 
 		winner = 0;
 
@@ -82,6 +79,10 @@ public:
 	}
 
 	void update() override {
+
+		ball->UpdateBoundsPosition();
+		player1->UpdateBoundsPosition();
+		player2->UpdateBoundsPosition();
 
 		float speed = 0.25f;
 
@@ -125,20 +126,20 @@ public:
 				ballDirection->y *= -1;
 			}
 
+			if (ball->GetBounds().Intersects(player1->GetBounds())) {
+				ballDirection->x *= -1;
+			}
+
+			if (ball->GetBounds().Intersects(player2->GetBounds())) {
+				ballDirection->x *= -1;
+			}
+
 			if (ball->position.x >= 16) {
 				winner = 1;
 			}
 
 			if (ball->position.x <= -16 - ball->GetSize().x) {
 				winner = 2;
-			}
-
-			if (maths::Rectangle(ball->GetPosition(), ball->GetSize()).Intersects(maths::Rectangle(player2->GetPosition(),player2->GetSize()))) {
-				ballDirection->x *= -1;
-			}
-
-			if (maths::Rectangle(ball->GetPosition(), ball->GetSize()).Intersects(maths::Rectangle(player1->GetPosition(), player1->GetSize()))) {
-				ballDirection->x *= -1;
 			}
 
 			ball->position += *ballDirection;

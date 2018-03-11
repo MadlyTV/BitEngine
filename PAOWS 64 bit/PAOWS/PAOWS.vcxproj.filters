@@ -72,13 +72,13 @@
     <ClCompile Include="src\graphics\2D\texture.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\maths\AABB.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="src\maths\Rectangle.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Example\Game.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\maths\AABB.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -422,10 +422,10 @@
     <ClInclude Include="src\BitEngine.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\maths\AABB.h">
+    <ClInclude Include="src\maths\Rectangle.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\maths\Rectangle.h">
+    <ClInclude Include="src\maths\AABB.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

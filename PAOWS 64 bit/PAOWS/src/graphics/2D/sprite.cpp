@@ -14,4 +14,8 @@ namespace BitEngine { namespace graphics {
 		m_Texture = texture;
 	}
 
+	void Sprite::UpdateBoundsPosition() {
+		m_Bounds.position = position;
+	}
+
 } }

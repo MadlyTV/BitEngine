@@ -23,8 +23,9 @@ namespace BitEngine { namespace graphics {
 
 	class Renderable2D
 	{
-	protected:
+	public:
 		maths::Rectangle m_Bounds;
+	protected:
 		maths::vec3 m_Position;
 		maths::vec2 m_Size;
 		maths::vec4 m_Color;
@@ -41,6 +42,14 @@ namespace BitEngine { namespace graphics {
 
 		virtual void submit(Renderer2D* renderer) const {
 			renderer->submit(this);
+		}
+
+		virtual void UpdateBoundsPosition() { 
+			m_Bounds.position = maths::vec2();
+		}
+
+		virtual void UpdateBoundsSize() {
+			m_Bounds.size = maths::vec2();
 		}
 
 		inline const maths::vec3& GetPosition() const { return m_Position; };
