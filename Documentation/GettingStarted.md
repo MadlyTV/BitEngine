@@ -40,10 +40,10 @@ class Game : public BitEngine {
 ```
 
 Theas 4 functions are manditory that you include in youre class and a short explanation for these functions are
-* BitEngine() is a standard constructor for your game class
-* ~Game() is a standard destructor for youre game class, you include it because you need somewhere to delete some resourses in the future
-* init() Runs one in the begining of youre game, you are going to use it to initialise resourses for your game
-* render() Runs as fast as possible and is used for rendering of your sprites
+* ```BitEngine()``` is a standard constructor for your game class
+* ```~Game()``` is a standard destructor for youre game class, you include it because you need somewhere to delete some resourses in the future
+* ```init()``` Runs one in the begining of youre game, you are going to use it to initialise resourses for your game
+* ```render()``` Runs as fast as possible and is used for rendering of your sprites
 
 There are 2 more funtions you can add if you need them but thay are not madetory 
 
@@ -61,9 +61,9 @@ void update() override
 }
 ```
 
-* tick() runs once per second
+* ```tick()``` runs once per second
 and
-* update() runs 60 times per second and is used for game logic
+* ```update()``` runs 60 times per second and is used for game logic
 
 Outside of youre newly created game class you need to create the standard cpp main function and initialise youre newly created class like so
 
