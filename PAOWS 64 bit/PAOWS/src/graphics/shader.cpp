@@ -2,6 +2,12 @@
 
 namespace BitEngine { namespace graphics {
 	
+	Shader::Shader()
+		: m_vertPath("src/shaders/standard.vert"), m_fragPath("src/shaders/standard.frag")
+	{
+		m_shaderID = load();
+	}
+
 	Shader::Shader(const char* vertexPath, const char* fragmentPath) 
 		: m_vertPath(vertexPath), m_fragPath(fragmentPath)
 	{

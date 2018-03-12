@@ -13,6 +13,7 @@ namespace BitEngine { namespace graphics {
 		GLuint m_shaderID;
 		const char *m_vertPath, *m_fragPath;
 	public:
+		Shader();
 		Shader(const char* vertexPath, const char* fragmentPath);
 		~Shader();
 

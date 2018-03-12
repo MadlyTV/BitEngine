@@ -1,4 +1,10 @@
-﻿  Game.cpp
+﻿  sprite.cpp
+d:\githubbitengine\paows 64 bit\paows\src\graphics\2d\renderable2d.h(3): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+d:\githubbitengine\paows 64 bit\paows\src\maths\maths_func.h(9): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+d:\githubbitengine\paows 64 bit\paows\src\graphics\2d\renderable2d.h(4): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+d:\githubbitengine\paows 64 bit\paows\src\graphics\2d\renderable2d.h(5): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+d:\githubbitengine\paows 64 bit\paows\src\graphics\2d\renderable2d.h(11): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  Game.cpp
 c:\program files (x86)\windows kits\10\include\10.0.15063.0\shared\minwindef.h(130): warning C4005: 'APIENTRY': macro redefinition
   d:\githubbitengine\paows 64 bit\directories\glfw64bit\include\glfw\glfw3.h(98): note: see previous definition of 'APIENTRY'
 d:\githubbitengine\paows 64 bit\paows\src\graphics\2d\renderable2d.h(3): warning C4067: unexpected tokens following preprocessor directive - expected a newline
@@ -6,24 +12,37 @@ d:\githubbitengine\paows 64 bit\paows\src\maths\maths_func.h(9): warning C4244: 
 d:\githubbitengine\paows 64 bit\paows\src\graphics\2d\renderable2d.h(4): warning C4067: unexpected tokens following preprocessor directive - expected a newline
 d:\githubbitengine\paows 64 bit\paows\src\graphics\2d\renderable2d.h(5): warning C4067: unexpected tokens following preprocessor directive - expected a newline
 d:\githubbitengine\paows 64 bit\paows\src\graphics\2d\renderable2d.h(11): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-d:\githubbitengine\paows 64 bit\paows\example\game.cpp(42): warning C4305: 'argument': truncation from 'double' to 'float'
-d:\githubbitengine\paows 64 bit\paows\example\game.cpp(45): warning C4305: 'argument': truncation from 'double' to 'float'
-d:\githubbitengine\paows 64 bit\paows\example\game.cpp(49): warning C4305: 'argument': truncation from 'double' to 'float'
-d:\githubbitengine\paows 64 bit\paows\example\game.cpp(49): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-d:\githubbitengine\paows 64 bit\paows\example\game.cpp(53): warning C4305: 'argument': truncation from 'double' to 'float'
-d:\githubbitengine\paows 64 bit\paows\example\game.cpp(56): warning C4305: 'argument': truncation from 'double' to 'float'
-d:\githubbitengine\paows 64 bit\paows\example\game.cpp(61): warning C4305: 'argument': truncation from 'double' to 'const float'
+d:\githubbitengine\paows 64 bit\paows\example\game.cpp(44): warning C4305: 'argument': truncation from 'double' to 'float'
+d:\githubbitengine\paows 64 bit\paows\example\game.cpp(47): warning C4305: 'argument': truncation from 'double' to 'float'
+d:\githubbitengine\paows 64 bit\paows\example\game.cpp(51): warning C4305: 'argument': truncation from 'double' to 'float'
+d:\githubbitengine\paows 64 bit\paows\example\game.cpp(51): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+d:\githubbitengine\paows 64 bit\paows\example\game.cpp(55): warning C4305: 'argument': truncation from 'double' to 'float'
+d:\githubbitengine\paows 64 bit\paows\example\game.cpp(58): warning C4305: 'argument': truncation from 'double' to 'float'
+d:\githubbitengine\paows 64 bit\paows\example\game.cpp(65): warning C4305: 'argument': truncation from 'double' to 'const float'
   Generating Code...
   Compiling...
-  sprite.cpp
+  layer.cpp
+d:\githubbitengine\paows 64 bit\paows\src\maths\maths_func.h(9): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+d:\githubbitengine\paows 64 bit\paows\src\graphics\2d\renderable2d.h(3): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+d:\githubbitengine\paows 64 bit\paows\src\graphics\2d\renderable2d.h(4): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+d:\githubbitengine\paows 64 bit\paows\src\graphics\2d\renderable2d.h(5): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+d:\githubbitengine\paows 64 bit\paows\src\graphics\2d\renderable2d.h(11): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  group.cpp
 d:\githubbitengine\paows 64 bit\paows\src\graphics\2d\renderable2d.h(3): warning C4067: unexpected tokens following preprocessor directive - expected a newline
 d:\githubbitengine\paows 64 bit\paows\src\maths\maths_func.h(9): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
 d:\githubbitengine\paows 64 bit\paows\src\graphics\2d\renderable2d.h(4): warning C4067: unexpected tokens following preprocessor directive - expected a newline
 d:\githubbitengine\paows 64 bit\paows\src\graphics\2d\renderable2d.h(5): warning C4067: unexpected tokens following preprocessor directive - expected a newline
 d:\githubbitengine\paows 64 bit\paows\src\graphics\2d\renderable2d.h(11): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  batchrenderer2D.cpp
+d:\githubbitengine\paows 64 bit\paows\src\maths\maths_func.h(9): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+d:\githubbitengine\paows 64 bit\paows\src\graphics\2d\renderable2d.h(3): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+d:\githubbitengine\paows 64 bit\paows\src\graphics\2d\renderable2d.h(4): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+d:\githubbitengine\paows 64 bit\paows\src\graphics\2d\renderable2d.h(5): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+d:\githubbitengine\paows 64 bit\paows\src\graphics\2d\renderable2d.h(11): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+d:\githubbitengine\paows 64 bit\paows\src\graphics\2d\batchrenderer2d.cpp(91): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+d:\githubbitengine\paows 64 bit\paows\src\graphics\2d\batchrenderer2d.cpp(92): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+d:\githubbitengine\paows 64 bit\paows\src\graphics\2d\batchrenderer2d.cpp(93): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+d:\githubbitengine\paows 64 bit\paows\src\graphics\2d\batchrenderer2d.cpp(94): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
   Generating Code...
-LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
-LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
-glew32s.lib(glew.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'glew32s.lib(glew.obj)' or at 'D:\GitHubBitEngine\PAOWS 64 bit\bin\Debug\vc120.pdb'; linking object as if no debug info
   PAOWS.vcxproj -> D:\GitHubBitEngine\PAOWS 64 bit\bin\Debug\PAOWS.exe
   PAOWS.vcxproj -> D:\GitHubBitEngine\PAOWS 64 bit\bin\Debug\PAOWS.pdb (Partial PDB)

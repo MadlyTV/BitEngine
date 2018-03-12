@@ -48,8 +48,8 @@ namespace BitEngine { namespace graphics {
 			m_Bounds.position = maths::vec2();
 		}
 
-		virtual void UpdateBoundsSize() {
-			m_Bounds.size = maths::vec2();
+		virtual void UpdateBoundsSize(maths::vec2 size) {
+			m_Bounds.size = size;
 		}
 
 		inline const maths::vec3& GetPosition() const { return m_Position; };

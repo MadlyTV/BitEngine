@@ -286,8 +286,8 @@
     <None Include="src\bin32\assimp.dll" />
     <None Include="src\bin32\assimp.exe" />
     <None Include="src\bin32\assimp_viewer.exe" />
-    <None Include="src\shaders\basic.frag" />
-    <None Include="src\shaders\basic.vert" />
+    <None Include="src\shaders\standard.frag" />
+    <None Include="src\shaders\standard.vert" />
   </ItemGroup>
   <ItemGroup>
     <Font Include="arial.ttf" />

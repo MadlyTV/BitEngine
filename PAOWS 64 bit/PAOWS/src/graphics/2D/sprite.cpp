@@ -18,4 +18,8 @@ namespace BitEngine { namespace graphics {
 		m_Bounds.position = position;
 	}
 
+	void Sprite::UpdateBoundsSize(maths::vec2 size) {
+		m_Bounds.size = size;
+	}
+
 } }

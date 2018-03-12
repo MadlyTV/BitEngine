@@ -6,8 +6,11 @@ using namespace maths;
 
 class Game : public BitEngine {
 private:
+	//the window and the layer varibals
 	Window* window;
 	Layer* layer;
+
+	//referense for all the sprites
 	Sprite* top;
 	Sprite* bottom;
 
@@ -17,22 +20,32 @@ private:
 	Sprite* Player1win;
 	Sprite* Player2win;
 
+	Sprite* ball;
+
+	//the direction the ball is moving in;
+	vec2* ballDirection;
+
+	//a varibal to check if a player has won and with player won
 	int winner;
 
-	Sprite* ball;
-	vec2* ballDirection;
+	//the speed for the players
+	float speed = 0.25f;
 public:
 	Game() {
 
 	}
 
 	~Game() {
+		//deletes tha layer vaibal when the game exits to clean up memory
 		delete layer;
 	}
 
 	void init() override {
+		//initializes the whe window
 		window = createWindow("ExampelPongGame", 1280, 720);
-		layer = new Layer(new BatchRenderer2D(), new Shader("src/shaders/basic.vert", "src/shaders/basic.frag"), maths::mat4::orthographic(-16,16, -9,9, -1,1));
+
+		//initialises the layer with a BatchRenderer and a standard shader and a orthographic view
+		layer = new Layer(new BatchRenderer2D(), new Shader(), maths::mat4::orthographic(-16,16, -9,9, -1,1));
 
 		//WinScreens
 		Player1win = new Sprite(-1000, -1000, 9, 3, new Texture("Example/Res/Player1.png"));
@@ -62,6 +75,7 @@ public:
 
 		winner = 0;
 
+		//adds all the sprites to my layer
 		layer->add(top);
 		layer->add(bottom);
 
@@ -75,19 +89,16 @@ public:
 	}
 
 	void tick() override {
+		//spits out the UPS(updated per second) and FPS (frames per second) in the game console
 		std::cout << "UPS: " << getUPS() << " FPS: " << getFPS() << std::endl;
 	}
 
 	void update() override {
-
-		ball->UpdateBoundsPosition();
-		player1->UpdateBoundsPosition();
-		player2->UpdateBoundsPosition();
-
-		float speed = 0.25f;
-
+		
+		//checks if no player has won then do game logic
 		if (winner == 0) {
 
+			//all the player inputs
 			if (window->isKeyPressed(GLFW_KEY_W)) {
 				player1->position.y += speed;
 			}
@@ -102,6 +113,12 @@ public:
 				player2->position.y -= speed;
 			}
 
+			//updates the collision bounds for all the moving sprites
+			ball->UpdateBoundsPosition();
+			player1->UpdateBoundsPosition();
+			player2->UpdateBoundsPosition();
+
+			//checks if player is over or under the maximum y value it can be and corrects its y value
 			if (player1->position.y >= 9 - player1->GetSize().y - top->GetSize().y) {
 				player1->position.y = 9 - player1->GetSize().y - top->GetSize().y;
 			}
@@ -118,6 +135,7 @@ public:
 				player2->position.y = -9 + bottom->GetSize().y;
 			}
 
+			//if ball hits top or bottom then change direction on the y value
 			if (ball->position.y >= 9-ball->GetSize().y) {
 				ballDirection->y *= -1;
 			}
@@ -126,6 +144,7 @@ public:
 				ballDirection->y *= -1;
 			}
 
+			//checks if ball hits the players padels then change x direction value
 			if (ball->GetBounds().Intersects(player1->GetBounds())) {
 				ballDirection->x *= -1;
 			}
@@ -134,6 +153,7 @@ public:
 				ballDirection->x *= -1;
 			}
 
+			//if ball is to far away on the x value set a player as winner
 			if (ball->position.x >= 16) {
 				winner = 1;
 			}
@@ -142,43 +162,61 @@ public:
 				winner = 2;
 			}
 
+			//update the ball position
 			ball->position += *ballDirection;
 		}
 		else if (winner == 1) {
+			//displays player one is winner
 			Player1win->position = vec2(-4.5, -2);
 
+			//checks if space is pressed
 			if (window->isKeyPressed(GLFW_KEY_SPACE)) {
+				// set is so that no one is winner :,(
 				winner = 0;
-
+				
+				// replases the ball in the center
 				ball->position.x = 0 - ball->GetSize().x/2;
 
+				//removes the "player 1 won" sign
 				Player1win->position = vec2(-1000, -1000);
+				//to be on the safe side removes the "player 2 won sign also"
 				Player2win->position = vec2(-1000, -1000);
 			}
 		}
 		else if (winner == 2) {
+			//displays player tow is winner
 			Player2win->position = vec2(-4.5, -2);
 
+			//checks if space is pressed
 			if (window->isKeyPressed(GLFW_KEY_SPACE)) {
+				// set is so that no one is winner :,(
 				winner = 0;
 
+				// replases the ball in the center
 				ball->position.x = 0 - ball->GetSize().x / 2;
 
+				//to be on the safe side removes the "player 1 won sign also"
 				Player1win->position = vec2(-1000, -1000);
+				//removes the "player 2 won" sign
 				Player2win->position = vec2(-1000, -1000);
 			}
 		}
 	}
 
 	void render() override {
+		//renders all the layers
 		layer->render();
 	}
 };
 
+//the main function cpp need to start a program
 int main() {
 
+	//the game class from above
 	Game game;
+	//starts the game
 	game.start();
 
+	//when everything is done return 0 :)
 	return 0;
 }

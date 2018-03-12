@@ -16,7 +16,7 @@ namespace BitEngine {namespace graphics {
 		void UpdateBoundsPosition() override;
 
 		//TODO: add this
-		//void UpdateBoundsSize() override;
+		void UpdateBoundsSize(maths::vec2 size) override;
 	};
 
 } }
