@@ -43,7 +43,7 @@ Theas 4 functions are manditory that you include in youre class and a short expl
 * ```BitEngine()``` is a standard constructor for your game class
 * ```~Game()``` is a standard destructor for youre game class, you include it because you need somewhere to delete some resourses in the future
 * ```init()``` Runs one in the begining of youre game, you are going to use it to initialise resourses for your game
-* ```render()``` Runs as fast as possible and is used for rendering of your sprites
+* ```render()``` Runs as fast as possible and is used for rendering of your layers
 
 There are 2 more funtions you can add if you need them but thay are not madetory 
 
@@ -113,3 +113,51 @@ Okay you need to replace the NAME, WIDTH and HEIGHT arguments with real numbers 
 * ```HEIGHT``` = the height of the window (int)
 
 Now this is the end of the getting started code you have everything you need to create a game file and a window.
+
+## SourceCode
+```
+//All the code from the engine
+#include <BitEngine.h>
+
+//A Game class with all the content you need for a window to pop up
+class Game : public BitEngine {
+private:
+	//A window varibal to keep track of the window and for all the window functions you need
+	Window* window;
+	//Standard constructor for youre game
+	Game()
+	{
+	
+	}
+	
+	//Standard destructor for youre class, used to delete resourses when the aplication exits
+	~Game()
+	{
+		
+	}
+	
+	//BitEngines initialise function, it runs once in the begining of the aplication start
+	void init() override 
+	{
+		window = createWindow(NAME, WIDTH, HEIGHT);
+	}
+	
+	//BitEngines render function, renders all the layers you give it
+	void render() override 
+	{
+	
+	}
+}
+
+//Standard main function for cpp
+int main()
+{
+	//The gameclass from above
+	Game game;
+	
+	//starts your the game so it runs
+	game.start();
+	
+	return 0;
+}
+```
