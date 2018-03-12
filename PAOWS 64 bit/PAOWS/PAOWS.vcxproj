@@ -69,7 +69,7 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>$(ProjectDir)ext\freetype\include;$(SolutionDir)Directories\FREEIMAGE\include;$(SolutionDir)Directories\ASSIMP64bit\include;$(SolutionDir)Directories\GLEW64bit\include;$(SolutionDir)Directories\GLFW64bit\include;$(IncludePath)</IncludePath>
+    <IncludePath>$(ProjectDir)src\;$(ProjectDir)ext\freetype\include;$(SolutionDir)Directories\FREEIMAGE\include;$(SolutionDir)Directories\ASSIMP64bit\include;$(SolutionDir)Directories\GLEW64bit\include;$(SolutionDir)Directories\GLFW64bit\include;$(IncludePath)</IncludePath>
     <LibraryPath>$(SolutionDir)Directories\FREEIMAGE\lib;$(SolutionDir)Directories\GLFW64bit\lib;$(SolutionDir)Directories\GLEW64bit\lib;$(SolutionDir)Directories\ASSIMP64bit\lib;$(LibraryPath)</LibraryPath>
     <OutDir>$(SolutionDir)bin\$(Configuration)\</OutDir>
     <IntDir>$(SolutionDir)bin\$(Configuration)\Intermediates\</IntDir>

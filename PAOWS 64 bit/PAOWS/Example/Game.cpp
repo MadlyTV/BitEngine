@@ -1,4 +1,4 @@
-#include "../src/BitEngine.h"
+#include <BitEngine.h>
 
 using namespace BitEngine;
 using namespace graphics;
