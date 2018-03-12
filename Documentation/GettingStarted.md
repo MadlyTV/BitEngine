@@ -100,7 +100,7 @@ Okay you have created the varibal but you havent assigned anything to it lets do
 ```
 void init() override 
 {
-		window = createWindow(NAME, WIDTH, HEIGHT);
+	window = createWindow(NAME, WIDTH, HEIGHT);
 }
 ```
 
