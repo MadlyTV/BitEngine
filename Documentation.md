@@ -16,9 +16,9 @@ Window window(NAME,WIDTH,HEIGHT)
 ```
 
 A short explanation about this syntax is
-NAME = The name of the window (char)
-WIDTH = The width of the window (int)
-HEIGHT = the height of the window (int)
+* NAME = The name of the window (char)
+* WIDTH = The width of the window (int)
+* HEIGHT = the height of the window (int)
 
 #### Exampel:
 
