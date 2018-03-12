@@ -108,8 +108,8 @@ A thing to note about this window is that in norman cases you whould have to del
 
 Okay you need to replace the NAME, WIDTH and HEIGHT arguments with real numbers and text so here is a short explanation about the arguments
 
-* NAME = The name of the window (char)
-* WIDTH = The width of the window (int)
-* HEIGHT = the height of the window (int)
+* ```NAME``` = The name of the window (char)
+* ```WIDTH``` = The width of the window (int)
+* ```HEIGHT``` = the height of the window (int)
 
 Now this is the end of the getting started code you have everything you need to create a game file and a window.
