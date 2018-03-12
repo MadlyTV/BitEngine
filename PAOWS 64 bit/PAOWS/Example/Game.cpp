@@ -69,9 +69,9 @@ public:
 		player2 = new Sprite(15.6, -2, 0.4, 4, maths::vec4(0, 0, 1, 1));
 
 		//ball
-		ball = new Sprite(-0.125, 0, 0.25, 0.25, maths::vec4(0, 1, 0, 1));
+		ball = new Sprite(-5, 0, 0.25, 0.25, maths::vec4(0, 1, 0, 1));
 
-		ballDirection = new vec2(0.4, 0.38f);
+		ballDirection = new vec2(0, 0);
 
 		winner = 0;
 

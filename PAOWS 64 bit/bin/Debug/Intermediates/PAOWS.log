@@ -6,12 +6,11 @@ d:\githubbitengine\paows 64 bit\paows\src\maths\maths_func.h(9): warning C4244: 
 d:\githubbitengine\paows 64 bit\paows\src\graphics\2d\renderable2d.h(4): warning C4067: unexpected tokens following preprocessor directive - expected a newline
 d:\githubbitengine\paows 64 bit\paows\src\graphics\2d\renderable2d.h(5): warning C4067: unexpected tokens following preprocessor directive - expected a newline
 d:\githubbitengine\paows 64 bit\paows\src\graphics\2d\renderable2d.h(11): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-d:\githubbitengine\paows 64 bit\paows\example\game.cpp(56): warning C4305: 'argument': truncation from 'double' to 'float'
-d:\githubbitengine\paows 64 bit\paows\example\game.cpp(59): warning C4305: 'argument': truncation from 'double' to 'float'
-d:\githubbitengine\paows 64 bit\paows\example\game.cpp(63): warning C4305: 'argument': truncation from 'double' to 'float'
-d:\githubbitengine\paows 64 bit\paows\example\game.cpp(63): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-d:\githubbitengine\paows 64 bit\paows\example\game.cpp(67): warning C4305: 'argument': truncation from 'double' to 'float'
-d:\githubbitengine\paows 64 bit\paows\example\game.cpp(70): warning C4305: 'argument': truncation from 'double' to 'float'
-d:\githubbitengine\paows 64 bit\paows\example\game.cpp(75): warning C4305: 'argument': truncation from 'double' to 'const float'
+d:\githubbitengine\paows 64 bit\paows\example\game.cpp(55): warning C4305: 'argument': truncation from 'double' to 'float'
+d:\githubbitengine\paows 64 bit\paows\example\game.cpp(58): warning C4305: 'argument': truncation from 'double' to 'float'
+d:\githubbitengine\paows 64 bit\paows\example\game.cpp(62): warning C4305: 'argument': truncation from 'double' to 'float'
+d:\githubbitengine\paows 64 bit\paows\example\game.cpp(62): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+d:\githubbitengine\paows 64 bit\paows\example\game.cpp(66): warning C4305: 'argument': truncation from 'double' to 'float'
+d:\githubbitengine\paows 64 bit\paows\example\game.cpp(69): warning C4305: 'argument': truncation from 'double' to 'float'
   PAOWS.vcxproj -> D:\GitHubBitEngine\PAOWS 64 bit\bin\Debug\PAOWS.exe
   PAOWS.vcxproj -> D:\GitHubBitEngine\PAOWS 64 bit\bin\Debug\PAOWS.pdb (Partial PDB)

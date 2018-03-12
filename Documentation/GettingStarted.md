@@ -114,6 +114,8 @@ Okay you need to replace the NAME, WIDTH and HEIGHT arguments with real numbers 
 
 Now this is the end of the getting started code you have everything you need to create a game file and a window.
 
+If you whant to continue you can follow the [PongGame](PongGame.md) tutorial. It is a followup from this on how to make a pong game 
+
 ## SourceCode
 ```
 //All the code from the engine

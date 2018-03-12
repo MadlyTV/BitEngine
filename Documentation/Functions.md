@@ -1,4 +1,4 @@
-#Functions
+# Functions
 
 This is going to contain all the accesseble functions and how to use them
 
