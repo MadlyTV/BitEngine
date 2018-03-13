@@ -1,0 +1,40 @@
+﻿  vec4.cpp
+  vec3.cpp
+  vec2.cpp
+  Rectangle.cpp
+d:\githubbitengine\bitengine\bitengine-core\src\maths\maths_func.h(9): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+  mat4.cpp
+d:\githubbitengine\bitengine\bitengine-core\src\maths\maths_func.h(9): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+  AABB.cpp
+d:\githubbitengine\bitengine\bitengine-core\src\maths\maths_func.h(9): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+  window.cpp
+d:\githubbitengine\bitengine\bitengine-core\src\graphics\window.h(4): fatal error C1083: Cannot open include file: 'GL\glew.h': No such file or directory
+  shader.cpp
+d:\githubbitengine\bitengine\bitengine-core\src\graphics\shader.h(3): fatal error C1083: Cannot open include file: 'GL\glew.h': No such file or directory
+  layer.cpp
+d:\githubbitengine\bitengine\bitengine-core\src\graphics\2d\renderer2d.h(4): fatal error C1083: Cannot open include file: 'GL\glew.h': No such file or directory
+  group.cpp
+d:\githubbitengine\bitengine\bitengine-core\src\graphics\2d\renderable2d.h(3): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+d:\githubbitengine\bitengine\bitengine-core\src\maths\maths_func.h(9): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+d:\githubbitengine\bitengine\bitengine-core\src\graphics\buffers\buffer.h(7): fatal error C1083: Cannot open include file: 'GL\glew.h': No such file or directory
+  vertexarray.cpp
+d:\githubbitengine\bitengine\bitengine-core\src\graphics\buffers\vertexarray.h(4): fatal error C1083: Cannot open include file: 'GL\glew.h': No such file or directory
+  indexbuffer.cpp
+d:\githubbitengine\bitengine\bitengine-core\src\graphics\buffers\indexbuffer.h(3): fatal error C1083: Cannot open include file: 'GL\glew.h': No such file or directory
+  buffer.cpp
+d:\githubbitengine\bitengine\bitengine-core\src\maths\maths_func.h(9): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+d:\githubbitengine\bitengine\bitengine-core\src\graphics\buffers\buffer.h(7): fatal error C1083: Cannot open include file: 'GL\glew.h': No such file or directory
+  texture.cpp
+d:\githubbitengine\bitengine\bitengine-core\src\graphics\2d\texture.h(3): fatal error C1083: Cannot open include file: 'FreeImage.h': No such file or directory
+  sprite.cpp
+d:\githubbitengine\bitengine\bitengine-core\src\graphics\2d\renderable2d.h(3): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+d:\githubbitengine\bitengine\bitengine-core\src\maths\maths_func.h(9): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+d:\githubbitengine\bitengine\bitengine-core\src\graphics\buffers\buffer.h(7): fatal error C1083: Cannot open include file: 'GL\glew.h': No such file or directory
+  batchrenderer2D.cpp
+d:\githubbitengine\bitengine\bitengine-core\src\graphics\2d\renderer2d.h(4): fatal error C1083: Cannot open include file: 'GL\glew.h': No such file or directory
+  Game.cpp
+d:\githubbitengine\bitengine\bitengine-core\example\game.cpp(1): fatal error C1083: Cannot open include file: 'BitEngine.h': No such file or directory
+  Generating Code...
+d:\githubbitengine\bitengine\bitengine-core\src\maths\vec2.cpp(161): warning C4172: returning address of local variable or temporary: stream
+d:\githubbitengine\bitengine\bitengine-core\src\maths\vec3.cpp(182): warning C4172: returning address of local variable or temporary: stream
+d:\githubbitengine\bitengine\bitengine-core\src\maths\vec4.cpp(93): warning C4172: returning address of local variable or temporary: stream

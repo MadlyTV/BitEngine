@@ -1,0 +1,17 @@
+﻿  Game.cpp
+c:\program files (x86)\windows kits\10\include\10.0.15063.0\shared\minwindef.h(130): warning C4005: 'APIENTRY': macro redefinition
+  d:\githubbitengine\bitengine\directories\glfw64bit\include\glfw\glfw3.h(98): note: see previous definition of 'APIENTRY'
+d:\githubbitengine\bitengine\bitengine-core\src\graphics\2d\renderable2d.h(3): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+d:\githubbitengine\bitengine\bitengine-core\src\maths\maths_func.h(9): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+d:\githubbitengine\bitengine\bitengine-core\src\graphics\2d\renderable2d.h(4): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+d:\githubbitengine\bitengine\bitengine-core\src\graphics\2d\renderable2d.h(5): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+d:\githubbitengine\bitengine\bitengine-core\src\graphics\2d\renderable2d.h(11): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+d:\githubbitengine\bitengine\bitengine-core\example\game.cpp(55): warning C4305: 'argument': truncation from 'double' to 'float'
+d:\githubbitengine\bitengine\bitengine-core\example\game.cpp(58): warning C4305: 'argument': truncation from 'double' to 'float'
+d:\githubbitengine\bitengine\bitengine-core\example\game.cpp(62): warning C4305: 'argument': truncation from 'double' to 'float'
+d:\githubbitengine\bitengine\bitengine-core\example\game.cpp(62): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+d:\githubbitengine\bitengine\bitengine-core\example\game.cpp(66): warning C4305: 'argument': truncation from 'double' to 'float'
+d:\githubbitengine\bitengine\bitengine-core\example\game.cpp(69): warning C4305: 'argument': truncation from 'double' to 'float'
+d:\githubbitengine\bitengine\bitengine-core\example\game.cpp(74): warning C4305: 'argument': truncation from 'double' to 'const float'
+  BitEngine-Core.vcxproj -> D:\GitHubBitEngine\BitEngine\bin\Debug\BitEngine-Core.exe
+  BitEngine-Core.vcxproj -> D:\GitHubBitEngine\BitEngine\bin\Debug\BitEngine-Core.pdb (Partial PDB)
