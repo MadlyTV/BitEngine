@@ -10,6 +10,14 @@ Now on the top of that file you need to include the BitEngine.h do that with the
 #include <BitEngine.h>
 ```
 
+After you have included the BitEngine header you need to add some namespaces that you will need to use so under the include add this
+
+```
+using namespace BitEngine;
+using namespace graphics;
+using namespace maths;
+```
+
 Now that you have included the BitEngine.h file you have access to the whole game engien.
 
 After this you need to make a new class that inherets from BitEngine inside your game.cpp file
@@ -112,6 +120,15 @@ Okay you need to replace the NAME, WIDTH and HEIGHT arguments with real numbers 
 * ```WIDTH``` = The width of the window (int)
 * ```HEIGHT``` = the height of the window (int)
 
+so for an exampel the code could look like
+
+```
+void init() override 
+{
+	window = createWindow("HelloWorld", 1280, 720);
+}
+```
+
 Now this is the end of the getting started code you have everything you need to create a game file and a window.
 
 If you whant to continue you can follow the [PongGame](PongGame.md) tutorial. It is a followup from this on how to make a pong game 
@@ -120,6 +137,11 @@ If you whant to continue you can follow the [PongGame](PongGame.md) tutorial. It
 ```
 //All the code from the engine
 #include <BitEngine.h>
+
+//all the namespaces you will need
+using namespace BitEngine;
+using namespace graphics;
+using namespace maths;
 
 //A Game class with all the content you need for a window to pop up
 class Game : public BitEngine {
@@ -141,7 +163,7 @@ private:
 	//BitEngines initialise function, it runs once in the begining of the aplication start
 	void init() override 
 	{
-		window = createWindow(NAME, WIDTH, HEIGHT);
+		window = createWindow("HelloWorld", 1280, 720);
 	}
 	
 	//BitEngines render function, renders all the layers you give it
