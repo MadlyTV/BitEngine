@@ -39,8 +39,7 @@ namespace BitEngine { namespace graphics {
 
 		if (!successvert) {
 			glGetShaderInfoLog(vertex, 512, NULL, infoLogvert);
-			//Log this
-			log(logWARNING) << "ERROR::SHADER::VERTEX::COMPILATION_FAILED\n" << infoLogvert;
+			log(logERROR) << "ERROR::SHADER::VERTEX::COMPILATION_FAILED\n" << infoLogvert;
 			glDeleteShader(vertex);
 			return 0;
 		}
@@ -55,8 +54,7 @@ namespace BitEngine { namespace graphics {
 
 		if (!successfrag) {
 			glGetShaderInfoLog(fragment, 512, NULL, infoLogfrag);
-			//Log this
-			log(logWARNING) << "ERROR::SHADER::FRAGMENT::COMPILATION_FAILED\n" << infoLogfrag;
+			log(logERROR) << "ERROR::SHADER::FRAGMENT::COMPILATION_FAILED\n" << infoLogfrag;
 			glDeleteShader(fragment);
 			return 0;
 		}

@@ -3,9 +3,11 @@
 #ifndef _LOGGER_H_
 #define _LOGGER_H_
 
-#include <iostream>
-#include <sstream>
 #include <Windows.h>
+#include <sstream>
+#include <iostream>
+
+#include "../utils/time.h"
 
 enum loglevel_e
 {
@@ -15,10 +17,10 @@ enum loglevel_e
 class logIt
 {
 public:
-	HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
 	logIt(loglevel_e _loglevel = logERROR) {
+		//HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
 
-		switch (_loglevel)
+		/*switch (_loglevel)
 		{
 		case logERROR:
 			SetConsoleTextAttribute(hConsole, (FOREGROUND_RED | FOREGROUND_INTENSITY));
@@ -44,9 +46,9 @@ public:
 		case logDEBUG4:
 			SetConsoleTextAttribute(hConsole, (FOREGROUND_RED * 2 | FOREGROUND_BLUE | FOREGROUND_INTENSITY));
 			break;
-		}
-		_buffer << _loglevel << " :"
-			<< std::string(
+		}*/
+		_buffer << Time::getTime() <<
+				std::string(
 				_loglevel > logDEBUG
 				? (_loglevel - logDEBUG) * 4
 				: 1
@@ -64,7 +66,7 @@ public:
 	{
 		_buffer << std::endl;
 		std::cerr << _buffer.str();
-		SetConsoleTextAttribute(hConsole, (FOREGROUND_GREEN | FOREGROUND_BLUE | FOREGROUND_RED));
+		//SetConsoleTextAttribute(hConsole, (FOREGROUND_GREEN | FOREGROUND_BLUE | FOREGROUND_RED));
 	}
 
 private:

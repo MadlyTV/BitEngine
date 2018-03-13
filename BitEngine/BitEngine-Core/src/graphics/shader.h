@@ -12,6 +12,8 @@ namespace BitEngine { namespace graphics {
 	class Shader
 	{
 	private:
+		loglevel_e loglevel = logDEBUG4;
+	private:
 		GLuint m_shaderID;
 		const char *m_vertPath, *m_fragPath;
 	public:

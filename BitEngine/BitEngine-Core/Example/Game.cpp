@@ -44,19 +44,8 @@ public:
 		//initializes the whe window
 		window = createWindow("ExampelPongGame", 1280, 720);
 
-		loglevel_e loglevel = logDEBUG4;
-
 		//initialises the layer with a BatchRenderer and a standard shader and a orthographic view
 		layer = new Layer(new BatchRenderer2D(), new Shader(), maths::mat4::orthographic(-16,16, -9,9, -1,1));
-
-		/*log(logERROR) <<"test";
-		log(logWARNING) <<"test";
-		log(logINFO) << "test";
-		log(logDEBUG4) << "test";
-		log(logDEBUG3) << "test";
-		log(logDEBUG2) << "test";
-		log(logDEBUG1) << "test";
-		log(logDEBUG) << "test";*/
 
 		//WinScreens
 		Player1win = new Sprite(-1000, -1000, 9, 3, new Texture("Example/Res/Player1.png"));

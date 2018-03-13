@@ -8,6 +8,7 @@ namespace BitEngine { namespace graphics {
 		m_title = title;
 		m_width = width;
 		m_height = height;
+
 		if (!init()) {
 			glfwTerminate();
 		}
@@ -25,22 +26,22 @@ namespace BitEngine { namespace graphics {
 	}
 
 	bool Window::init() {
-		std::cout << "==========BitEngine Enabled==========" << std::endl;
+		std::cout << "=========================BitEngine v0.2.Alpha (DEV)=========================" << std::endl;
 
 		if (!glfwInit()) {
-			//log(logERROR) << "Error! Coudent load GLFW window!";
+			log(logERROR) << "Error! Coudent load GLFW window!";
 			return false;
 		}
 		else {
-			//log(logERROR) << "Succeded to load GLFW window";
+			log(logINFO) << "Succeded to load GLFW window";
 		}
 		m_window = glfwCreateWindow(m_width, m_height, m_title, NULL,NULL);
 		if (!m_window) {
-			//log(logERROR) << "Failed to create GLFW window!";
+			log(logERROR) << "Failed to create GLFW window!";
 			return false;
 		}
 		else {
-			//log(logERROR) << "Succeded to create GLFW window";
+			log(logINFO) << "Succeded to create GLFW window";
 		}
 		glfwMakeContextCurrent(m_window);
 		glfwSetWindowUserPointer(m_window, this);
@@ -51,14 +52,14 @@ namespace BitEngine { namespace graphics {
 		glfwSetScrollCallback(m_window, scroll_callback);
 		glfwSwapInterval(0.0);
 
-		std::cout << glGetString(GL_VERSION) << std::endl;
+		log(logINFO) << glGetString(GL_VERSION);
 
 		if (glewInit() != GLEW_OK) {
-			//log(logERROR) << "Error! coudent initialize GLEW!";
+			log(logERROR) << "Error! coudent initialize GLEW!";
 			return false;
 		}
 		else {
-			//log(logERROR) << "Succeded initialized GLEW";
+			log(logINFO) << "Succeded initialized GLEW";
 		}
 
 		return true;
@@ -100,7 +101,7 @@ namespace BitEngine { namespace graphics {
 	void Window::update() {
 		GLenum error = glGetError();
 		if (error != GL_NO_ERROR) {
-			//log(logERROR) << "OPENGL Error: " << error;
+			log(logWARNING) << "OPENGL Error: " << error;
 		}
 
 		if (scrollx != 0)

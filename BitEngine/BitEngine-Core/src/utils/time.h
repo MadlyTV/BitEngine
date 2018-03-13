@@ -5,46 +5,22 @@
 
 #include <string>
 #include <sstream>
-#include "platform.h"
-
-#ifdef PLATFORM_WIN32
-#include <atltime.h>
-#elif PLATFORM_LINUX
-//TODO: handling LINUX
-#elif PLATFORM_MACOSX
-//TOTO: handling MACOSX
-#endif
+#include <ctime>
 
 class Time {
 public:
 	static const std::string getTime() {
 		
-		std::ostringstream oss;
+		time_t t = time(0);
+		struct tm * now = localtime(&t);
 
-#ifdef PLATFORM_WIN32
-
-		CTime time = CTime::GetCurrentTime();
-		oss << time.GetHour()
-			<< ":"
-			<< time.GetMinute()
-			<< ":"
-			<< time.GetSecond();
-
-#else
-
-		//TODO: Linux and MacOS X
-
-#endif 
-
-		return oss.str();
+		return std::to_string(now->tm_hour) + ":" + std::to_string(now->tm_min) + ":" + std::to_string(now->tm_sec);
 
 	}
 
-	static const std::string getDate() {
+	/*static const std::string getDate() {
 
 		std::ostringstream oss;
-
-#ifdef PLATFORM_WIN32
 
 		CTime time = CTime::GetCurrentTime();
 		oss << time.GetDay()
@@ -52,16 +28,9 @@ public:
 			<< time.GetMonth()
 			<< ":"
 			<< time.GetYear();
-
-#else
-
-		//TODO: Linux and MacOS X
-
-#endif 
-
 		return oss.str();
 
-	}
+	}*/
 };
 
 #endif //TIME_H

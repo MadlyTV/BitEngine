@@ -1,10 +1,11 @@
 #pragma once
 
-#include "../Logger/logger.h"
 
 #include <iostream>
 #include <GL\glew.h>
 #include <GLFW\glfw3.h>
+
+#include "../Logger/logger.h"
 
 namespace BitEngine { namespace graphics {
 
@@ -14,6 +15,9 @@ namespace BitEngine { namespace graphics {
 	class Window
 	{
 	private:
+		loglevel_e loglevel = logDEBUG4;
+	private:
+
 		const char *m_title;
 		int m_width, m_height;
 		GLFWwindow *m_window;
