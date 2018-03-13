@@ -26,7 +26,7 @@ namespace BitEngine { namespace graphics {
 	}
 
 	bool Window::init() {
-		std::cout << "=========================BitEngine v0.2.Alpha (DEV)=========================" << std::endl;
+		std::cout << "=========================BitEngine v0.3.Alpha=========================" << std::endl;
 
 		if (!glfwInit()) {
 			log(logERROR) << "Error! Coudent load GLFW window!";
