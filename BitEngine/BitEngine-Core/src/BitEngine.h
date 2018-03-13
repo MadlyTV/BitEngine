@@ -12,8 +12,12 @@
 
 #include "maths\maths.h"
 
+#include "Logger\logger.h"
+
 namespace BitEngine {
 	class BitEngine {
+	public:
+		loglevel_e loglevel = logDEBUG4;
 	private:
 		graphics::Window* m_Window;
 		Timer* m_Timer;

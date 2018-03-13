@@ -90,7 +90,7 @@ public:
 
 	void tick() override {
 		//spits out the UPS(updated per second) and FPS (frames per second) in the game console
-		std::cout << "UPS: " << getUPS() << " FPS: " << getFPS() << std::endl;
+		log(logINFO) << "UPS: " << getUPS() << " FPS: " << getFPS();
 	}
 
 	void update() override {
