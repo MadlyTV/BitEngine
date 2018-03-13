@@ -25,24 +25,22 @@ namespace BitEngine { namespace graphics {
 	}
 
 	bool Window::init() {
+		std::cout << "==========BitEngine Enabled==========" << std::endl;
+
 		if (!glfwInit()) {
-			//TODO: Log This
-			std::cout << "Error! Coudent load GLFW window!" << std::endl;
+			//log(logERROR) << "Error! Coudent load GLFW window!";
 			return false;
 		}
 		else {
-			//TODO: Log This
-			std::cout << "Succeded to load GLFW window" << std::endl;
+			//log(logERROR) << "Succeded to load GLFW window";
 		}
 		m_window = glfwCreateWindow(m_width, m_height, m_title, NULL,NULL);
 		if (!m_window) {
-			//TODO: Log This
-			std::cout << "Failed to create GLFW window!" << std::endl;
+			//log(logERROR) << "Failed to create GLFW window!";
 			return false;
 		}
 		else {
-			//TODO: Log This
-			std::cout << "Succeded to create GLFW window" << std::endl;
+			//log(logERROR) << "Succeded to create GLFW window";
 		}
 		glfwMakeContextCurrent(m_window);
 		glfwSetWindowUserPointer(m_window, this);
@@ -56,13 +54,11 @@ namespace BitEngine { namespace graphics {
 		std::cout << glGetString(GL_VERSION) << std::endl;
 
 		if (glewInit() != GLEW_OK) {
-			//TODO: Log This
-			std::cout << "Error! coudent initialize GLEW!" << std::endl;
+			//log(logERROR) << "Error! coudent initialize GLEW!";
 			return false;
 		}
 		else {
-			//TODO: Log This
-			std::cout << "Succeded initialized GLEW" << std::endl;
+			//log(logERROR) << "Succeded initialized GLEW";
 		}
 
 		return true;
@@ -80,7 +76,6 @@ namespace BitEngine { namespace graphics {
 	}
 
 	bool Window::isKeyPressed(unsigned int keycode) const {
-		//TODO: log this
 		if (keycode >= MAX_KEYS) {
 			return false;
 		}
@@ -89,7 +84,6 @@ namespace BitEngine { namespace graphics {
 	}
 
 	bool Window::isMouseButtonPressed(unsigned int button) const {
-		//TODO: log this
 		if (button >= MAX_BUTTONS) {
 			return false;
 		}
@@ -106,8 +100,7 @@ namespace BitEngine { namespace graphics {
 	void Window::update() {
 		GLenum error = glGetError();
 		if (error != GL_NO_ERROR) {
-			//TODO: Log This
-			std::cout << "OPENGL Error: " << error << std::endl;
+			//log(logERROR) << "OPENGL Error: " << error;
 		}
 
 		if (scrollx != 0)

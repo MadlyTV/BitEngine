@@ -8,6 +8,8 @@
 #include "graphics\2D\batchrenderer2D.h"
 #include "graphics\layers\layer.h"
 
+#include "Logger\logger.h"
+
 #include "maths\maths.h"
 
 namespace BitEngine {
@@ -20,7 +22,7 @@ namespace BitEngine {
 		BitEngine() 
 			: m_FramesPerSecond(0), m_UpdatesPerSecond(0)
 		{
-
+			
 		}
 
 		virtual ~BitEngine() {
@@ -28,6 +30,7 @@ namespace BitEngine {
 		}
 
 		graphics::Window* createWindow(const char *title, int width, int height) {
+			
 			m_Window = new graphics::Window(title, width, height);
 			return m_Window;
 		}

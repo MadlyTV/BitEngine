@@ -5,6 +5,8 @@
 #include "../utils/FileUtils.h"
 #include "../maths/maths.h"
 
+#include "../Logger/logger.h"
+
 namespace BitEngine { namespace graphics {
 
 	class Shader

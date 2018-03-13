@@ -13,6 +13,57 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\src">
+      <UniqueIdentifier>{b963a536-1ebb-4b2d-830d-e2aac7c3bc88}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\src\graphics">
+      <UniqueIdentifier>{83359602-0fcf-4e35-9f4e-e55b5e96d802}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\src\graphics\2D">
+      <UniqueIdentifier>{9fef0be5-3419-4789-887f-2edcc00a2627}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\src\graphics\buffers">
+      <UniqueIdentifier>{ff76b68f-6f06-455e-816e-466a39d28171}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\src\graphics\layers">
+      <UniqueIdentifier>{817a3cce-df0f-48e6-8a01-86a0a623d6a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\src\graphics\3D">
+      <UniqueIdentifier>{e53f01cf-7e14-44fb-aab9-d5d064425cf4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\src\maths">
+      <UniqueIdentifier>{b60c8bfe-60f3-4fbd-9ec6-007762797caf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\src\utils">
+      <UniqueIdentifier>{67d759b9-7d20-4f9e-a7ca-0fa5ebdb727b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src">
+      <UniqueIdentifier>{d27388ae-ebae-43a7-8533-95bc681adc5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\graphics">
+      <UniqueIdentifier>{9aeacb53-1dea-41e3-bae5-2022565c60b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\graphics\2D">
+      <UniqueIdentifier>{99863761-6f28-40ba-ae14-630c0f0c3f1b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Exampel">
+      <UniqueIdentifier>{9f6a35c2-9c53-42b8-ab7b-2a0e26ac19d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\graphics\buffers">
+      <UniqueIdentifier>{3f0a950e-bf3d-4a81-aeb4-c0750a9ce611}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\graphics\layers">
+      <UniqueIdentifier>{cfd971c4-f369-497d-b5ac-513ccdc236f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\graphics\maths">
+      <UniqueIdentifier>{78fed578-9df5-4864-9ef9-06b6f3a97de0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\graphics\3D">
+      <UniqueIdentifier>{ca857b33-2c78-49e0-ab0f-129fcb521e21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\FREETYPE">
+      <UniqueIdentifier>{ac7337c1-0a86-46e0-aa81-e64101a8de0d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Image Include="Example\Res\Player1.png">
@@ -23,402 +74,408 @@
     </Image>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Example\Game.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="src\graphics\2D\batchrenderer2D.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\src\graphics\2D</Filter>
     </ClCompile>
-    <ClCompile Include="src\graphics\2D\sprite.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\graphics\2D\texture.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="Example\Game.cpp">
+      <Filter>Source Files\Exampel</Filter>
     </ClCompile>
     <ClCompile Include="src\graphics\buffers\buffer.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\src\graphics\buffers</Filter>
     </ClCompile>
     <ClCompile Include="src\graphics\buffers\indexbuffer.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\src\graphics\buffers</Filter>
     </ClCompile>
     <ClCompile Include="src\graphics\buffers\vertexarray.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\src\graphics\buffers</Filter>
     </ClCompile>
     <ClCompile Include="src\graphics\layers\group.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\graphics\layers\layer.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\graphics\shader.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\graphics\window.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\maths\AABB.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\maths\mat4.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\maths\Rectangle.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\maths\vec2.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\src\graphics\layers</Filter>
     </ClCompile>
     <ClCompile Include="src\maths\vec3.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\src\graphics\maths</Filter>
     </ClCompile>
     <ClCompile Include="src\maths\vec4.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\src\graphics\maths</Filter>
+    </ClCompile>
+    <ClCompile Include="src\maths\vec2.cpp">
+      <Filter>Source Files\src\graphics\maths</Filter>
+    </ClCompile>
+    <ClCompile Include="src\maths\AABB.cpp">
+      <Filter>Source Files\src\graphics\maths</Filter>
+    </ClCompile>
+    <ClCompile Include="src\maths\Rectangle.cpp">
+      <Filter>Source Files\src\graphics\maths</Filter>
+    </ClCompile>
+    <ClCompile Include="src\maths\mat4.cpp">
+      <Filter>Source Files\src\graphics\maths</Filter>
+    </ClCompile>
+    <ClCompile Include="src\graphics\window.cpp">
+      <Filter>Source Files\src\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\graphics\shader.cpp">
+      <Filter>Source Files\src\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\graphics\layers\layer.cpp">
+      <Filter>Source Files\src\graphics\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\graphics\2D\sprite.cpp">
+      <Filter>Source Files\src\graphics\2D</Filter>
+    </ClCompile>
+    <ClCompile Include="src\graphics\2D\texture.cpp">
+      <Filter>Source Files\src\graphics\2D</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ext\freetype\include\freetype\config\ftconfig.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ext\freetype\include\freetype\config\ftheader.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ext\freetype\include\freetype\config\ftmodule.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ext\freetype\include\freetype\config\ftoption.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ext\freetype\include\freetype\config\ftstdlib.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ext\freetype\include\freetype\internal\services\svbdf.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ext\freetype\include\freetype\internal\services\svcfftl.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ext\freetype\include\freetype\internal\services\svcid.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ext\freetype\include\freetype\internal\services\svfntfmt.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ext\freetype\include\freetype\internal\services\svgldict.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ext\freetype\include\freetype\internal\services\svgxval.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ext\freetype\include\freetype\internal\services\svkern.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ext\freetype\include\freetype\internal\services\svmetric.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ext\freetype\include\freetype\internal\services\svmm.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ext\freetype\include\freetype\internal\services\svotval.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ext\freetype\include\freetype\internal\services\svpfr.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ext\freetype\include\freetype\internal\services\svpostnm.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ext\freetype\include\freetype\internal\services\svprop.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ext\freetype\include\freetype\internal\services\svpscmap.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ext\freetype\include\freetype\internal\services\svpsinfo.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ext\freetype\include\freetype\internal\services\svsfnt.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ext\freetype\include\freetype\internal\services\svttcmap.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ext\freetype\include\freetype\internal\services\svtteng.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ext\freetype\include\freetype\internal\services\svttglyf.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ext\freetype\include\freetype\internal\services\svwinfnt.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ext\freetype\include\freetype\internal\autohint.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ext\freetype\include\freetype\internal\cffotypes.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ext\freetype\include\freetype\internal\cfftypes.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ext\freetype\include\freetype\internal\ftcalc.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ext\freetype\include\freetype\internal\ftdebug.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ext\freetype\include\freetype\internal\ftdrv.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ext\freetype\include\freetype\internal\ftgloadr.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ext\freetype\include\freetype\internal\fthash.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ext\freetype\include\freetype\internal\ftmemory.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ext\freetype\include\freetype\internal\ftobjs.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ext\freetype\include\freetype\internal\ftpic.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ext\freetype\include\freetype\internal\ftpsprop.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ext\freetype\include\freetype\internal\ftrfork.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ext\freetype\include\freetype\internal\ftserv.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ext\freetype\include\freetype\internal\ftstream.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ext\freetype\include\freetype\internal\fttrace.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ext\freetype\include\freetype\internal\ftvalid.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ext\freetype\include\freetype\internal\internal.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ext\freetype\include\freetype\internal\psaux.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ext\freetype\include\freetype\internal\pshints.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ext\freetype\include\freetype\internal\sfnt.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ext\freetype\include\freetype\internal\t1types.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ext\freetype\include\freetype\internal\tttypes.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ext\freetype\include\freetype\freetype.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ext\freetype\include\freetype\ftadvanc.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ext\freetype\include\freetype\ftbbox.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ext\freetype\include\freetype\ftbdf.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ext\freetype\include\freetype\ftbitmap.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ext\freetype\include\freetype\ftbzip2.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ext\freetype\include\freetype\ftcache.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ext\freetype\include\freetype\ftchapters.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ext\freetype\include\freetype\ftcid.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ext\freetype\include\freetype\ftdriver.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ext\freetype\include\freetype\fterrdef.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ext\freetype\include\freetype\fterrors.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ext\freetype\include\freetype\ftfntfmt.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ext\freetype\include\freetype\ftgasp.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ext\freetype\include\freetype\ftglyph.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ext\freetype\include\freetype\ftgxval.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ext\freetype\include\freetype\ftgzip.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ext\freetype\include\freetype\ftimage.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ext\freetype\include\freetype\ftincrem.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ext\freetype\include\freetype\ftlcdfil.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ext\freetype\include\freetype\ftlist.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ext\freetype\include\freetype\ftlzw.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ext\freetype\include\freetype\ftmac.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ext\freetype\include\freetype\ftmodapi.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ext\freetype\include\freetype\ftmoderr.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ext\freetype\include\freetype\ftotval.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ext\freetype\include\freetype\ftoutln.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ext\freetype\include\freetype\ftparams.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ext\freetype\include\freetype\ftpfr.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ext\freetype\include\freetype\ftrender.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ext\freetype\include\freetype\ftsizes.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ext\freetype\include\freetype\ftsnames.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ext\freetype\include\freetype\ftstroke.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ext\freetype\include\freetype\ftsynth.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ext\freetype\include\freetype\ftsystem.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ext\freetype\include\freetype\fttrigon.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ext\freetype\include\freetype\fttypes.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ext\freetype\include\freetype\ftwinfnt.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ext\freetype\include\freetype\t1tables.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ext\freetype\include\freetype\ttnameid.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ext\freetype\include\freetype\tttables.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ext\freetype\include\freetype\tttags.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ext\freetype\include\ft2build.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="src\graphics\2D\batchrenderer2D.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\graphics\2D\renderable2D.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\graphics\2D\renderer2D.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\graphics\2D\sprite.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\graphics\2D\texture.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\src\graphics\2D</Filter>
     </ClInclude>
     <ClInclude Include="src\graphics\buffers\buffer.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\graphics\buffers\indexbuffer.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\graphics\buffers\vertexarray.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\graphics\layers\group.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\graphics\layers\layer.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\graphics\shader.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\graphics\window.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\maths\AABB.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\maths\mat4.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\maths\maths.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\maths\maths_func.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\maths\Rectangle.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\maths\vec2.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\maths\vec3.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\maths\vec4.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\utils\FileUtils.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\utils\imageload.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\utils\timer.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\src\graphics\buffers</Filter>
     </ClInclude>
     <ClInclude Include="src\BitEngine.h">
+      <Filter>Header Files\src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\graphics\buffers\indexbuffer.h">
+      <Filter>Header Files\src\graphics\buffers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\graphics\buffers\vertexarray.h">
+      <Filter>Header Files\src\graphics\buffers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\graphics\layers\group.h">
+      <Filter>Header Files\src\graphics\layers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\graphics\layers\layer.h">
+      <Filter>Header Files\src\graphics\layers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\graphics\2D\renderable2D.h">
+      <Filter>Header Files\src\graphics\2D</Filter>
+    </ClInclude>
+    <ClInclude Include="src\graphics\2D\sprite.h">
+      <Filter>Header Files\src\graphics\2D</Filter>
+    </ClInclude>
+    <ClInclude Include="src\graphics\2D\texture.h">
+      <Filter>Header Files\src\graphics\2D</Filter>
+    </ClInclude>
+    <ClInclude Include="src\graphics\2D\renderer2D.h">
+      <Filter>Header Files\src\graphics\2D</Filter>
+    </ClInclude>
+    <ClInclude Include="src\graphics\shader.h">
+      <Filter>Header Files\src\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\graphics\window.h">
+      <Filter>Header Files\src\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\maths\mat4.h">
+      <Filter>Header Files\src\maths</Filter>
+    </ClInclude>
+    <ClInclude Include="src\maths\maths.h">
+      <Filter>Header Files\src\maths</Filter>
+    </ClInclude>
+    <ClInclude Include="src\maths\maths_func.h">
+      <Filter>Header Files\src\maths</Filter>
+    </ClInclude>
+    <ClInclude Include="src\maths\AABB.h">
+      <Filter>Header Files\src\maths</Filter>
+    </ClInclude>
+    <ClInclude Include="src\maths\vec2.h">
+      <Filter>Header Files\src\maths</Filter>
+    </ClInclude>
+    <ClInclude Include="src\maths\vec3.h">
+      <Filter>Header Files\src\maths</Filter>
+    </ClInclude>
+    <ClInclude Include="src\maths\vec4.h">
+      <Filter>Header Files\src\maths</Filter>
+    </ClInclude>
+    <ClInclude Include="src\maths\Rectangle.h">
+      <Filter>Header Files\src\maths</Filter>
+    </ClInclude>
+    <ClInclude Include="src\utils\imageload.h">
+      <Filter>Header Files\src\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="src\utils\FileUtils.h">
+      <Filter>Header Files\src\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="src\utils\timer.h">
+      <Filter>Header Files\src\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\freetype\include\freetype\internal\autohint.h">
+      <Filter>Header Files\FREETYPE</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\freetype\include\freetype\internal\cffotypes.h">
+      <Filter>Header Files\FREETYPE</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\freetype\include\freetype\internal\cfftypes.h">
+      <Filter>Header Files\FREETYPE</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\freetype\include\freetype\freetype.h">
+      <Filter>Header Files\FREETYPE</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\freetype\include\ft2build.h">
+      <Filter>Header Files\FREETYPE</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\freetype\include\freetype\ftadvanc.h">
+      <Filter>Header Files\FREETYPE</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\freetype\include\freetype\ftbbox.h">
+      <Filter>Header Files\FREETYPE</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\freetype\include\freetype\ftbdf.h">
+      <Filter>Header Files\FREETYPE</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\freetype\include\freetype\ftbitmap.h">
+      <Filter>Header Files\FREETYPE</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\freetype\include\freetype\ftbzip2.h">
+      <Filter>Header Files\FREETYPE</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\freetype\include\freetype\ftcache.h">
+      <Filter>Header Files\FREETYPE</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\freetype\include\freetype\internal\ftcalc.h">
+      <Filter>Header Files\FREETYPE</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\freetype\include\freetype\ftchapters.h">
+      <Filter>Header Files\FREETYPE</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\freetype\include\freetype\ftcid.h">
+      <Filter>Header Files\FREETYPE</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\freetype\include\freetype\config\ftconfig.h">
+      <Filter>Header Files\FREETYPE</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\freetype\include\freetype\internal\ftdebug.h">
+      <Filter>Header Files\FREETYPE</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\freetype\include\freetype\ftdriver.h">
+      <Filter>Header Files\FREETYPE</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\freetype\include\freetype\internal\ftdrv.h">
+      <Filter>Header Files\FREETYPE</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\freetype\include\freetype\fterrdef.h">
+      <Filter>Header Files\FREETYPE</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\freetype\include\freetype\fterrors.h">
+      <Filter>Header Files\FREETYPE</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\freetype\include\freetype\ftfntfmt.h">
+      <Filter>Header Files\FREETYPE</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\freetype\include\freetype\ftgasp.h">
+      <Filter>Header Files\FREETYPE</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\freetype\include\freetype\internal\ftgloadr.h">
+      <Filter>Header Files\FREETYPE</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\freetype\include\freetype\ftglyph.h">
+      <Filter>Header Files\FREETYPE</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\freetype\include\freetype\ftgxval.h">
+      <Filter>Header Files\FREETYPE</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\freetype\include\freetype\ftgzip.h">
+      <Filter>Header Files\FREETYPE</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\freetype\include\freetype\internal\fthash.h">
+      <Filter>Header Files\FREETYPE</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\freetype\include\freetype\config\ftheader.h">
+      <Filter>Header Files\FREETYPE</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\freetype\include\freetype\ftimage.h">
+      <Filter>Header Files\FREETYPE</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\freetype\include\freetype\ftincrem.h">
+      <Filter>Header Files\FREETYPE</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\freetype\include\freetype\ftlcdfil.h">
+      <Filter>Header Files\FREETYPE</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\freetype\include\freetype\ftlist.h">
+      <Filter>Header Files\FREETYPE</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\freetype\include\freetype\ftlzw.h">
+      <Filter>Header Files\FREETYPE</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\freetype\include\freetype\ftmac.h">
+      <Filter>Header Files\FREETYPE</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\freetype\include\freetype\internal\ftmemory.h">
+      <Filter>Header Files\FREETYPE</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\freetype\include\freetype\ftmodapi.h">
+      <Filter>Header Files\FREETYPE</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\freetype\include\freetype\ftmoderr.h">
+      <Filter>Header Files\FREETYPE</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\freetype\include\freetype\config\ftmodule.h">
+      <Filter>Header Files\FREETYPE</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\freetype\include\freetype\internal\ftobjs.h">
+      <Filter>Header Files\FREETYPE</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\freetype\include\freetype\config\ftoption.h">
+      <Filter>Header Files\FREETYPE</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\freetype\include\freetype\ftotval.h">
+      <Filter>Header Files\FREETYPE</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\freetype\include\freetype\ftoutln.h">
+      <Filter>Header Files\FREETYPE</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\freetype\include\freetype\ftparams.h">
+      <Filter>Header Files\FREETYPE</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\freetype\include\freetype\ftpfr.h">
+      <Filter>Header Files\FREETYPE</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\freetype\include\freetype\internal\ftpic.h">
+      <Filter>Header Files\FREETYPE</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\freetype\include\freetype\internal\ftpsprop.h">
+      <Filter>Header Files\FREETYPE</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\freetype\include\freetype\ftrender.h">
+      <Filter>Header Files\FREETYPE</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\freetype\include\freetype\internal\ftrfork.h">
+      <Filter>Header Files\FREETYPE</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\freetype\include\freetype\internal\ftserv.h">
+      <Filter>Header Files\FREETYPE</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\freetype\include\freetype\ftsizes.h">
+      <Filter>Header Files\FREETYPE</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\freetype\include\freetype\ftsnames.h">
+      <Filter>Header Files\FREETYPE</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\freetype\include\freetype\config\ftstdlib.h">
+      <Filter>Header Files\FREETYPE</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\freetype\include\freetype\internal\ftstream.h">
+      <Filter>Header Files\FREETYPE</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\freetype\include\freetype\ftstroke.h">
+      <Filter>Header Files\FREETYPE</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\freetype\include\freetype\ftsynth.h">
+      <Filter>Header Files\FREETYPE</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\freetype\include\freetype\ftsystem.h">
+      <Filter>Header Files\FREETYPE</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\freetype\include\freetype\internal\fttrace.h">
+      <Filter>Header Files\FREETYPE</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\freetype\include\freetype\fttrigon.h">
+      <Filter>Header Files\FREETYPE</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\freetype\include\freetype\fttypes.h">
+      <Filter>Header Files\FREETYPE</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\freetype\include\freetype\internal\ftvalid.h">
+      <Filter>Header Files\FREETYPE</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\freetype\include\freetype\ftwinfnt.h">
+      <Filter>Header Files\FREETYPE</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\freetype\include\freetype\internal\internal.h">
+      <Filter>Header Files\FREETYPE</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\freetype\include\freetype\internal\psaux.h">
+      <Filter>Header Files\FREETYPE</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\freetype\include\freetype\internal\pshints.h">
+      <Filter>Header Files\FREETYPE</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\freetype\include\freetype\internal\sfnt.h">
+      <Filter>Header Files\FREETYPE</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\freetype\include\freetype\internal\services\svbdf.h">
+      <Filter>Header Files\FREETYPE</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\freetype\include\freetype\internal\services\svcfftl.h">
+      <Filter>Header Files\FREETYPE</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\freetype\include\freetype\internal\services\svcid.h">
+      <Filter>Header Files\FREETYPE</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\freetype\include\freetype\internal\services\svfntfmt.h">
+      <Filter>Header Files\FREETYPE</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\freetype\include\freetype\internal\services\svgldict.h">
+      <Filter>Header Files\FREETYPE</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\freetype\include\freetype\internal\services\svgxval.h">
+      <Filter>Header Files\FREETYPE</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\freetype\include\freetype\internal\services\svkern.h">
+      <Filter>Header Files\FREETYPE</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\freetype\include\freetype\internal\services\svmetric.h">
+      <Filter>Header Files\FREETYPE</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\freetype\include\freetype\internal\services\svmm.h">
+      <Filter>Header Files\FREETYPE</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\freetype\include\freetype\internal\services\svotval.h">
+      <Filter>Header Files\FREETYPE</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\freetype\include\freetype\internal\services\svpfr.h">
+      <Filter>Header Files\FREETYPE</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\freetype\include\freetype\internal\services\svpostnm.h">
+      <Filter>Header Files\FREETYPE</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\freetype\include\freetype\internal\services\svprop.h">
+      <Filter>Header Files\FREETYPE</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\freetype\include\freetype\internal\services\svpscmap.h">
+      <Filter>Header Files\FREETYPE</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\freetype\include\freetype\internal\services\svpsinfo.h">
+      <Filter>Header Files\FREETYPE</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\freetype\include\freetype\internal\services\svsfnt.h">
+      <Filter>Header Files\FREETYPE</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\freetype\include\freetype\internal\services\svttcmap.h">
+      <Filter>Header Files\FREETYPE</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\freetype\include\freetype\internal\services\svtteng.h">
+      <Filter>Header Files\FREETYPE</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\freetype\include\freetype\internal\services\svttglyf.h">
+      <Filter>Header Files\FREETYPE</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\freetype\include\freetype\internal\services\svwinfnt.h">
+      <Filter>Header Files\FREETYPE</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\freetype\include\freetype\t1tables.h">
+      <Filter>Header Files\FREETYPE</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\freetype\include\freetype\internal\t1types.h">
+      <Filter>Header Files\FREETYPE</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\freetype\include\freetype\ttnameid.h">
+      <Filter>Header Files\FREETYPE</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\freetype\include\freetype\tttables.h">
+      <Filter>Header Files\FREETYPE</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\freetype\include\freetype\tttags.h">
+      <Filter>Header Files\FREETYPE</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\freetype\include\freetype\internal\tttypes.h">
+      <Filter>Header Files\FREETYPE</Filter>
+    </ClInclude>
+    <ClInclude Include="src\utils\time.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Logger\logger.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
