@@ -90,7 +90,7 @@ To explaing these functions in short
 * Argument4 (0.2) = the height of the sprite
 * Argument5 (maths::vec4(1,1,1,1)) = the color of the sprite in RGBA format
 
-1. top
+2. top
 * Argument1 (-16) = the x position of the sprite
 * Argument2 (-9) = the y position of the sprite
 * Argument3 (32) = the width of the sprite
