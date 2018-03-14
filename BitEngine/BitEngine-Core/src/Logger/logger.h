@@ -47,7 +47,7 @@ public:
 			SetConsoleTextAttribute(hConsole, (FOREGROUND_RED * 2 | FOREGROUND_BLUE | FOREGROUND_INTENSITY));
 			break;
 		}*/
-		_buffer << Time::getTime() <<
+		_buffer << Time::getTime() << " :" <<
 				std::string(
 				_loglevel > logDEBUG
 				? (_loglevel - logDEBUG) * 4

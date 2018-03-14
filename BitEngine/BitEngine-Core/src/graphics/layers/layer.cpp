@@ -28,6 +28,10 @@ namespace BitEngine { namespace graphics {
 			delete m_Renderables[i];
 	}
 
+	void updateCameraPosition() {
+
+	}
+
 	void Layer::add(Renderable2D* renderable) {
 		m_Renderables.push_back(renderable);
 	}

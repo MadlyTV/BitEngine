@@ -7,12 +7,50 @@ d:\githubbitengine\bitengine\bitengine-core\src\maths\maths_func.h(9): warning C
 d:\githubbitengine\bitengine\bitengine-core\src\graphics\2d\renderable2D.h(4): warning C4067: unexpected tokens following preprocessor directive - expected a newline
 d:\githubbitengine\bitengine\bitengine-core\src\graphics\2d\renderable2D.h(5): warning C4067: unexpected tokens following preprocessor directive - expected a newline
 d:\githubbitengine\bitengine\bitengine-core\src\graphics\2d\renderable2D.h(11): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-Example\Game.cpp(62): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Example\Game.cpp(69): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  batchrenderer2D.cpp
+d:\githubbitengine\bitengine\bitengine-core\src\maths\maths_func.h(9): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+d:\githubbitengine\bitengine\bitengine-core\src\graphics\2d\renderable2D.h(3): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+d:\githubbitengine\bitengine\bitengine-core\src\graphics\2d\renderable2D.h(4): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+d:\githubbitengine\bitengine\bitengine-core\src\graphics\2d\renderable2D.h(5): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+d:\githubbitengine\bitengine\bitengine-core\src\graphics\2d\renderable2D.h(11): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+src\graphics\2D\batchrenderer2D.cpp(91): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+src\graphics\2D\batchrenderer2D.cpp(92): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+src\graphics\2D\batchrenderer2D.cpp(93): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+src\graphics\2D\batchrenderer2D.cpp(94): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+  sprite.cpp
+d:\githubbitengine\bitengine\bitengine-core\src\graphics\2d\renderable2D.h(3): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+d:\githubbitengine\bitengine\bitengine-core\src\maths\maths_func.h(9): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+d:\githubbitengine\bitengine\bitengine-core\src\graphics\2d\renderable2D.h(4): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+d:\githubbitengine\bitengine\bitengine-core\src\graphics\2d\renderable2D.h(5): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+d:\githubbitengine\bitengine\bitengine-core\src\graphics\2d\renderable2D.h(11): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  group.cpp
+d:\githubbitengine\bitengine\bitengine-core\src\graphics\layers\../2D/renderable2D.h(3): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+d:\githubbitengine\bitengine\bitengine-core\src\maths\maths_func.h(9): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+d:\githubbitengine\bitengine\bitengine-core\src\graphics\layers\../2D/renderable2D.h(4): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+d:\githubbitengine\bitengine\bitengine-core\src\graphics\layers\../2D/renderable2D.h(5): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+d:\githubbitengine\bitengine\bitengine-core\src\graphics\layers\../2D/renderable2D.h(11): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  layer.cpp
+d:\githubbitengine\bitengine\bitengine-core\src\maths\maths_func.h(9): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+d:\githubbitengine\bitengine\bitengine-core\src\graphics\layers\../2D/renderable2D.h(3): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+d:\githubbitengine\bitengine\bitengine-core\src\graphics\layers\../2D/renderable2D.h(4): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+d:\githubbitengine\bitengine\bitengine-core\src\graphics\layers\../2D/renderable2D.h(5): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+d:\githubbitengine\bitengine\bitengine-core\src\graphics\layers\../2D/renderable2D.h(11): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  shader.cpp
+d:\githubbitengine\bitengine\bitengine-core\src\maths\maths_func.h(9): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+src\graphics\shader.cpp(47): warning C4101: 'fragmentShader': unreferenced local variable
+src\graphics\shader.cpp(32): warning C4101: 'vertexShader': unreferenced local variable
+src\graphics\shader.cpp(103): warning C4305: 'argument': truncation from 'int' to 'GLboolean'
+src\graphics\shader.cpp(103): warning C4309: 'argument': truncation of constant value
+  window.cpp
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\shared\minwindef.h(130): warning C4005: 'APIENTRY': macro redefinition
+  D:\GitHubBitEngine\BitEngine\Directories\GLFW64bit\include\GLFW\glfw3.h(98): note: see previous definition of 'APIENTRY'
+src\graphics\window.cpp(53): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
 LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
   Generating code
-  93 of 475 functions (19.6%) were compiled, the rest were copied from previous compilation.
-    10 functions were new in current compilation
-    26 functions had inline decision re-evaluated but remain unchanged
+  9 of 486 functions ( 1.9%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    33 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
 glew32s.lib(glew.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'glew32s.lib(glew.obj)' or at 'D:\GitHubBitEngine\BitEngine\bin\Release\vc120.pdb'; linking object as if no debug info
   BitEngine-Core.vcxproj -> D:\GitHubBitEngine\BitEngine\bin\Release\BitEngine-Core.exe

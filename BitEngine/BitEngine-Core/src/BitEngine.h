@@ -8,6 +8,9 @@
 #include "graphics\2D\batchrenderer2D.h"
 #include "graphics\layers\layer.h"
 
+#include "graphics\camera\orthographicCamera.h"
+#include "graphics\camera\camera.h"
+
 #include "Logger\logger.h"
 
 #include "maths\maths.h"

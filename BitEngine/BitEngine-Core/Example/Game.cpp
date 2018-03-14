@@ -22,6 +22,9 @@ private:
 
 	Sprite* ball;
 
+	//a camera varibal
+	OrthographicCamera* camera;
+
 	//the direction the ball is moving in;
 	vec2* ballDirection;
 
@@ -38,14 +41,18 @@ public:
 	~Game() {
 		//deletes tha layer vaibal when the game exits to clean up memory
 		delete layer;
+		delete camera;
 	}
 
 	void init() override {
 		//initializes the whe window
 		window = createWindow("ExampelPongGame", 1280, 720);
 
+		//A camera object for later use
+		camera = new OrthographicCamera(maths::mat4::orthographic(-16, 16, -9, 9, -1, 1));
+
 		//initialises the layer with a BatchRenderer and a standard shader and a orthographic view
-		layer = new Layer(new BatchRenderer2D(), new Shader(), maths::mat4::orthographic(-16,16, -9,9, -1,1));
+		layer = new Layer(new BatchRenderer2D(), new Shader(), camera->GetProjectionMatrix());
 
 		//WinScreens
 		Player1win = new Sprite(-1000, -1000, 9, 3, new Texture("Example/Res/Player1.png"));
