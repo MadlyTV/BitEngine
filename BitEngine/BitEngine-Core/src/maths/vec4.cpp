@@ -1,6 +1,6 @@
 #include "vec4.h"
 
-namespace BitEngine { namespace maths {
+namespace bt { namespace maths {
 
 	vec4::vec4() 
 		: x(0.0f), y(0.0f), z(0.0f), w(0.0f)

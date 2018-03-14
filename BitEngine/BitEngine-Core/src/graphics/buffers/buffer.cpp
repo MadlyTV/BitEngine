@@ -1,6 +1,6 @@
 #include "buffer.h"
 
-namespace BitEngine { namespace graphics {
+namespace bt { namespace graphics {
 
 	Buffer::Buffer(GLfloat* data, GLsizei count, GLuint componentCount) {
 		m_ComponentCount = componentCount;

@@ -7,7 +7,7 @@
 
 #include "../Logger/logger.h"
 
-namespace BitEngine { namespace graphics {
+namespace bt { namespace graphics {
 
 	class Shader
 	{

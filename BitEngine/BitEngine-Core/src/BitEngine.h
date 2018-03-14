@@ -17,7 +17,7 @@
 
 #include "Logger\logger.h"
 
-namespace BitEngine {
+namespace bt {
 	class BitEngine {
 	public:
 		loglevel_e loglevel = logDEBUG4;

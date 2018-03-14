@@ -5,7 +5,7 @@
 #include <fstream>
 #include <vector>
 
-namespace BitEngine {
+namespace bt {
 	class FileUtils
 	{
 	public:

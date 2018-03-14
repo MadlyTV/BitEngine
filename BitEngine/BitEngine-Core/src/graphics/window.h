@@ -7,7 +7,7 @@
 
 #include "../Logger/logger.h"
 
-namespace BitEngine { namespace graphics {
+namespace bt { namespace graphics {
 
 #define MAX_KEYS 1024
 #define MAX_BUTTONS 32

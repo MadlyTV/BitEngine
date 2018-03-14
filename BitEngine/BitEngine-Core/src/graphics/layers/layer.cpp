@@ -1,6 +1,6 @@
 #include "layer.h"
 
-namespace BitEngine { namespace graphics {
+namespace bt { namespace graphics {
 
 	Layer::Layer(Renderer2D* renderer, Shader* shader, maths::mat4 projectionmatrix) 
 		: m_ProjectionMatrix(projectionmatrix), m_Shader(shader), m_Renderer(renderer)

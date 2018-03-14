@@ -5,7 +5,7 @@
 
 #include "buffer.h"
 
-namespace BitEngine { namespace graphics {
+namespace bt { namespace graphics {
 
 	class VertexArray
 	{

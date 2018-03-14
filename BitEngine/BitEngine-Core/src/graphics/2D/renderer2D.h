@@ -4,7 +4,7 @@
 #include <GL\glew.h>
 #include "../../maths/maths.h"
 
-namespace BitEngine { namespace graphics {
+namespace bt { namespace graphics {
 
 	class Renderable2D;
 

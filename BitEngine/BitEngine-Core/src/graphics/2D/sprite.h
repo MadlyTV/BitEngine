@@ -3,7 +3,7 @@
 #include "renderable2D.h"
 #include "../../maths/maths.h"
 
-namespace BitEngine {namespace graphics {
+namespace bt {namespace graphics {
 
 	class Sprite : public Renderable2D
 	{

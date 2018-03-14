@@ -5,7 +5,7 @@
 #include "renderable2D.h"
 #include "../buffers/indexbuffer.h"
 
-namespace BitEngine { namespace graphics {
+namespace bt { namespace graphics {
 
 #define RENDERER_MAX_SPRITES	60000
 #define RENDERER_VERTEX_SIZE	sizeof(VertexData)

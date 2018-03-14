@@ -1,6 +1,6 @@
 #include "AABB.h"
 
-namespace BitEngine {
+namespace bt {
 	namespace maths {
 
 	AABB::AABB() 

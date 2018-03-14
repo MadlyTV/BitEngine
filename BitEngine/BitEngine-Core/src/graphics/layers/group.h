@@ -2,7 +2,7 @@
 
 #include "../2D/renderable2D.h"
 
-namespace BitEngine {namespace graphics {
+namespace bt {namespace graphics {
 
 	class Group : public Renderable2D
 	{

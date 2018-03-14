@@ -1,6 +1,6 @@
 #include "indexbuffer.h"
 
-namespace BitEngine { namespace graphics {
+namespace bt { namespace graphics {
 
 	IndexBuffer::IndexBuffer(GLushort* data, GLsizei count) {
 		m_Count = count;

@@ -1,7 +1,7 @@
 #include "mat4.h"
 #include "maths.h"
 
-namespace BitEngine { namespace maths {
+namespace bt { namespace maths {
 	
 	mat4::mat4() {
 		memset(elements, 0, 4 * 4 * sizeof(float));

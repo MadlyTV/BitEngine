@@ -1,6 +1,6 @@
 #include "window.h"
 
-namespace BitEngine { namespace graphics {
+namespace bt { namespace graphics {
 	
 	void window_resize(GLFWwindow *window, int width, int height);
 

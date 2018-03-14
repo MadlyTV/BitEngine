@@ -2,7 +2,7 @@
 
 #include <GL\glew.h>
 
-namespace BitEngine { namespace graphics {
+namespace bt { namespace graphics {
 
 	class IndexBuffer
 	{

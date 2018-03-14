@@ -3,7 +3,7 @@
 #include <sstream>
 #include "vec3.h"
 
-namespace BitEngine { namespace maths {
+namespace bt { namespace maths {
 
 	struct vec3;
 

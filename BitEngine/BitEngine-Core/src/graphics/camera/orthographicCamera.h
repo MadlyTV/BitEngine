@@ -3,7 +3,7 @@
 #include "../../maths/maths.h"
 #include "camera.h"
 
-namespace BitEngine { namespace graphics {
+namespace bt { namespace graphics {
 
 	class OrthographicCamera : public Camera
 	{

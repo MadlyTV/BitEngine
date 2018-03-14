@@ -1,6 +1,6 @@
 #include "texture.h"
 
-namespace BitEngine { namespace graphics {
+namespace bt { namespace graphics {
 
 	Texture::Texture(const std::string& filename)
 		: m_FileName(filename)

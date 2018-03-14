@@ -3,7 +3,7 @@
 #include <iostream>
 #include "maths.h"
 
-namespace BitEngine { namespace maths {
+namespace bt { namespace maths {
 	struct Rectangle;
 
 	struct AABB {

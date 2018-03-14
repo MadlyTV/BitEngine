@@ -1,6 +1,6 @@
 #include "Rectangle.h"
 
-namespace BitEngine {namespace maths {
+namespace bt {namespace maths {
 	
 	Rectangle::Rectangle() 
 		: position(vec2()), size(vec2())

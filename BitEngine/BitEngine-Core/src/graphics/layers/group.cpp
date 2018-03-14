@@ -2,7 +2,7 @@
 
 #include "group.h"
 
-namespace BitEngine { namespace graphics {
+namespace bt { namespace graphics {
 
 	Group::Group(const maths::mat4& transform)
 		: m_TransformationMatrix(transform)

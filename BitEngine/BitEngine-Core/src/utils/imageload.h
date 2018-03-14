@@ -3,7 +3,7 @@
 #include <string>
 #include <FreeImage.h>
 
-namespace BitEngine {
+namespace bt {
 
 	static BYTE* load_image(const char* filename, GLsizei* width, GLsizei* height) {
 

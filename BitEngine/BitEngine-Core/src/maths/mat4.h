@@ -4,7 +4,7 @@
 #include "vec4.h"
 #include "maths_func.h"
 
-namespace BitEngine { namespace maths {
+namespace bt { namespace maths {
 
 	struct mat4
 	{

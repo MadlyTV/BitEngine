@@ -1,7 +1,7 @@
 #pragma once
 #include "../../maths/maths.h"
 
-namespace BitEngine { namespace graphics {
+namespace bt { namespace graphics {
 
 	class Camera
 	{

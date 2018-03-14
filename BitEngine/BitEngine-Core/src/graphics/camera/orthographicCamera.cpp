@@ -1,6 +1,6 @@
 #include "orthographicCamera.h"
 
-namespace BitEngine {namespace graphics {
+namespace bt {namespace graphics {
 
 	OrthographicCamera::OrthographicCamera(const maths::mat4& projectionMatrix)
 		: Camera(projectionMatrix)

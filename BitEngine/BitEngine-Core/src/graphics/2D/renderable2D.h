@@ -11,7 +11,7 @@
 #include "..\..\maths\maths.h";
 #include "..\shader.h"
 
-namespace BitEngine { namespace graphics {
+namespace bt { namespace graphics {
 
 	struct VertexData
 	{

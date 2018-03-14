@@ -1,6 +1,6 @@
 #include <BitEngine.h>
 
-using namespace BitEngine;
+using namespace bt;
 using namespace graphics;
 using namespace maths;
 

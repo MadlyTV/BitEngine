@@ -12,7 +12,7 @@
 #include <cstdio>
 #include FT_FREETYPE_H
 
-namespace BitEngine { namespace graphics {
+namespace bt { namespace graphics {
 
 	class Texture
 	{

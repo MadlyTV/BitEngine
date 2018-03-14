@@ -1,6 +1,6 @@
 #include "camera.h"
 
-namespace BitEngine { namespace graphics {
+namespace bt { namespace graphics {
 
 	Camera::Camera(const maths::mat4& projectionMatrix)
 		: m_ProjectionMatrix(projectionMatrix)

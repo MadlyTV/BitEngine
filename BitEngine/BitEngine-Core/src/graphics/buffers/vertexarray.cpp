@@ -1,6 +1,6 @@
 #include "vertexarray.h"
 
-namespace BitEngine { namespace graphics {
+namespace bt { namespace graphics {
 
 	VertexArray::VertexArray() {
 		glGenVertexArrays(1, &m_ArrayID);

@@ -2,7 +2,7 @@
 
 #include <iostream>
 
-namespace BitEngine { namespace maths {
+namespace bt { namespace maths {
 
 	struct vec4
 	{

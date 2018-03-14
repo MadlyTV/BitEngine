@@ -1,6 +1,6 @@
 #include "batchrenderer2D.h"
 
-namespace BitEngine { namespace graphics {
+namespace bt { namespace graphics {
 
 	BatchRenderer2D::BatchRenderer2D() {
 		init();

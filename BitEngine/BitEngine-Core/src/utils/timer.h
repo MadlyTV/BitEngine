@@ -2,7 +2,7 @@
 
 #include <Windows.h>
 
-namespace BitEngine {
+namespace bt {
 	class Timer
 	{
 	private:

@@ -4,7 +4,7 @@
 #include "maths.h"
 #include "AABB.h"
 
-namespace BitEngine { namespace maths {
+namespace bt { namespace maths {
 	struct AABB;
 
 	struct Rectangle {

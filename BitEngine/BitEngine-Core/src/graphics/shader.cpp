@@ -1,6 +1,6 @@
 #include "shader.h"
 
-namespace BitEngine { namespace graphics {
+namespace bt { namespace graphics {
 	
 	Shader::Shader()
 		: m_vertPath("src/shaders/standard.vert"), m_fragPath("src/shaders/standard.frag")
