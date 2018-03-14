@@ -61,7 +61,7 @@ void tick() override
 
 }
 ```
-adn
+and
 ```
 void update() override 
 {
