@@ -1,0 +1,24 @@
+#pragma once
+
+#include "events.h"
+#include <functional> 
+
+namespace bt { namespace events {
+
+	class EventDispatcher {
+	private:
+		Event& m_Event;
+	public:
+		EventDispatcher(Event& event)
+			: m_Event(event) 
+		{}
+
+		template<typename T>
+		void Dispatcher(std::function<bool(T&)> func) {
+			if ((int32)m_Event.GetType() & (int32)T::GetStaticType()) {
+				m_Event.m_Handled = func(*(T*)&event);
+			}
+		}
+	};
+
+} }

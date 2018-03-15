@@ -39,13 +39,13 @@
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v141</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v141</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
@@ -70,27 +70,34 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <OutDir>$(SolutionDir)bin\$(Configuration)\</OutDir>
-    <IntDir>$(SolutionDir)bin\$(Configuration)\Intermediates\</IntDir>
-    <IncludePath>$(ProjectDir)src\;$(ProjectDir)ext\freetype\include;$(SolutionDir)Directories\FREEIMAGE\include;$(SolutionDir)Directories\ASSIMP64bit\include;$(SolutionDir)Directories\GLEW64bit\include;$(SolutionDir)Directories\GLFW64bit\include;$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)bin\Debug\</OutDir>
+    <IntDir>$(SolutionDir)bin\Debug\Intermediates\</IntDir>
+    <IncludePath>$(SolutionDir)Directories\FREEIMAGE\include;$(SolutionDir)Directories\ASSIMP64bit\include;$(SolutionDir)Directories\GLEW64bit\include;$(SolutionDir)Directories\GLFW64bit\include;$(IncludePath)</IncludePath>
     <LibraryPath>$(SolutionDir)Directories\FREEIMAGE\lib;$(SolutionDir)Directories\GLFW64bit\lib;$(SolutionDir)Directories\GLEW64bit\lib;$(SolutionDir)Directories\ASSIMP64bit\lib;$(LibraryPath)</LibraryPath>
+    <TargetName>BTCore</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <OutDir>$(SolutionDir)bin\$(Configuration)\</OutDir>
-    <IntDir>$(SolutionDir)bin\$(Configuration)\Intermediates\</IntDir>
-    <IncludePath>$(ProjectDir)src\;$(ProjectDir)ext\freetype\include;$(SolutionDir)Directories\FREEIMAGE\include;$(SolutionDir)Directories\ASSIMP64bit\include;$(SolutionDir)Directories\GLEW64bit\include;$(SolutionDir)Directories\GLFW64bit\include;$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)bin\DEBUG\</OutDir>
+    <IntDir>$(SolutionDir)bin\DEBUG\Intermediates\</IntDir>
+    <IncludePath>$(ProjectDir)ext\freetype\include;$(SolutionDir)Directories\FREEIMAGE\include;$(SolutionDir)Directories\ASSIMP64bit\include;$(SolutionDir)Directories\GLEW64bit\include;$(SolutionDir)Directories\GLFW64bit\include;$(IncludePath)</IncludePath>
     <LibraryPath>$(SolutionDir)Directories\FREEIMAGE\lib;$(SolutionDir)Directories\GLFW64bit\lib;$(SolutionDir)Directories\GLEW64bit\lib;$(SolutionDir)Directories\ASSIMP64bit\lib;$(LibraryPath)</LibraryPath>
+    <TargetName>BTCore</TargetName>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>GLEW_STATIC;WIN32;_LIB;FT2_BUILD_LIBBARY;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;NLOG;BT_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>BT_PLATFORM_WINDOWS;BT_PLATFORM_WIN32;NOGDI;BT_DEBUG;BT_RENDERAPI_OPENGL;BT_CORE_DLL;GLEW_STATIC;WIN32;_LIB;FT2_BUILD_LIBBARY;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;NLOG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <BasicRuntimeChecks>UninitializedLocalUsageCheck</BasicRuntimeChecks>
+      <AdditionalIncludeDirectories>src</AdditionalIncludeDirectories>
+      <OmitFramePointers>false</OmitFramePointers>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>bt/bt.h</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
       <AdditionalDependencies>glfw3.lib;glew32s.lib;opengl32.lib;assimp.lib;FreeImage.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <TargetMachine>MachineX64</TargetMachine>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -115,16 +122,20 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <WarningLevel>Level3</WarningLevel>
+      <WarningLevel>Level2</WarningLevel>
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <SDLCheck>true</SDLCheck>
+      <SDLCheck>false</SDLCheck>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
       <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
-      <PreprocessorDefinitions>GLEW_STATIC;WIN32;_LIB;FT2_BUILD_LIBBARY;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;NLOG;BT_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>BT_PLATFORM_WINDOWS;BT_PLATFORM_WIN32;NOGDI;BT_DEBUG;BT_RENDERAPI_OPENGL;BT_CORE_DLL;GLEW_STATIC;WIN32;_LIB;FT2_BUILD_LIBBARY;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;NLOG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <EnableEnhancedInstructionSet>StreamingSIMDExtensions</EnableEnhancedInstructionSet>
       <FloatingPointModel>Fast</FloatingPointModel>
+      <AdditionalIncludeDirectories>src</AdditionalIncludeDirectories>
+      <OmitFramePointers>false</OmitFramePointers>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>bt/bt.h</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
@@ -133,12 +144,20 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <Image Include="Example\Res\Player1.png" />
-    <Image Include="Example\Res\Player2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="Example\Game.cpp" />
+    <ClCompile Include="src\bt\bt.cpp" />
     <ClCompile Include="src\bt.cpp" />
+    <ClCompile Include="src\bt\events\Event.cpp" />
+    <ClCompile Include="src\bt\maths\AABB.cpp" />
+    <ClCompile Include="src\bt\maths\mat4.cpp" />
+    <ClCompile Include="src\bt\maths\Rectangle.cpp" />
+    <ClCompile Include="src\bt\maths\vec2.cpp" />
+    <ClCompile Include="src\bt\maths\vec3.cpp" />
+    <ClCompile Include="src\bt\maths\vec4.cpp" />
+    <ClCompile Include="src\bt\platform\windows\Win32Log.cpp" />
+    <ClCompile Include="src\bt\String.cpp" />
+    <ClCompile Include="src\bt\system\Allocator.cpp" />
+    <ClCompile Include="src\bt\system\Memory.cpp" />
+    <ClCompile Include="src\bt\system\MemoryManager.cpp" />
     <ClCompile Include="src\graphics\2D\batchrenderer2D.cpp" />
     <ClCompile Include="src\graphics\2D\sprite.cpp" />
     <ClCompile Include="src\graphics\2D\texture.cpp" />
@@ -157,11 +176,33 @@
     <ClCompile Include="src\maths\vec2.cpp" />
     <ClCompile Include="src\maths\vec3.cpp" />
     <ClCompile Include="src\maths\vec4.cpp" />
-    <ClCompile Include="src\string.cpp" />
+    <ClCompile Include="src\String.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\BitEngine.h" />
+    <ClInclude Include="src\bt\bt.h" />
+    <ClInclude Include="src\BitEngine.h" />
     <ClInclude Include="src\bt.h" />
+    <ClInclude Include="src\bt\common.h" />
+    <ClInclude Include="src\bt\events\Event.h" />
+    <ClInclude Include="src\bt\events\EventDispatcher.h" />
+    <ClInclude Include="src\bt\events\Events.h" />
+    <ClInclude Include="src\bt\maths\AABB.h" />
+    <ClInclude Include="src\bt\maths\mat4.h" />
+    <ClInclude Include="src\bt\maths\maths.h" />
+    <ClInclude Include="src\bt\maths\maths_func.h" />
+    <ClInclude Include="src\bt\maths\Rectangle.h" />
+    <ClInclude Include="src\bt\maths\vec2.h" />
+    <ClInclude Include="src\bt\maths\vec3.h" />
+    <ClInclude Include="src\bt\maths\vec4.h" />
+    <ClInclude Include="src\bt\String.h" />
+    <ClInclude Include="src\bt\system\Allocator.h" />
+    <ClInclude Include="src\bt\system\Memory.h" />
+    <ClInclude Include="src\bt\system\MemoryManager.h" />
+    <ClInclude Include="src\bt\types.h" />
+    <ClInclude Include="src\bt\utils\Log.h" />
+    <ClInclude Include="src\bt\utils\time.h" />
+    <ClInclude Include="src\bt\utils\timer.h" />
     <ClInclude Include="src\graphics\2D\batchrenderer2D.h" />
     <ClInclude Include="src\graphics\2D\renderable2D.h" />
     <ClInclude Include="src\graphics\2D\renderer2D.h" />
@@ -186,7 +227,7 @@
     <ClInclude Include="src\maths\vec2.h" />
     <ClInclude Include="src\maths\vec3.h" />
     <ClInclude Include="src\maths\vec4.h" />
-    <ClInclude Include="src\string.h" />
+    <ClInclude Include="src\String.h" />
     <ClInclude Include="src\types.h" />
     <ClInclude Include="src\utils\FileUtils.h" />
     <ClInclude Include="src\utils\imageload.h" />
