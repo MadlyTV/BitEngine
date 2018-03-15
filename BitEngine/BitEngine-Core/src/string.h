@@ -21,7 +21,7 @@ namespace bt {
 
 		template<typename T>
 		static String Hex(const T* input, uint size) {
-			memeset(s_Buffer, 0, STRINGFORMAT_BUFFER_SIZE);
+			memset(s_Buffer, 0, STRINGFORMAT_BUFFER_SIZE);
 			for (uint i = 0; i < size; i++)
 				sprintf(s_Buffer + i * 3, "%02x", input[i]);
 			return String(s_Buffer);
