@@ -1,0 +1,9 @@
+﻿  main.cpp
+d:\githubbitengine\bitengine\dependencies\bitenginewin32\include\bt\system\memory.h(8): warning C4615: #pragma warning: unknown user warning type
+d:\githubbitengine\bitengine\dependencies\bitenginewin32\include\bt\system\memory.h(10): warning C4595: 'operator new': non-member operator new or delete functions may not be declared inline
+d:\githubbitengine\bitengine\dependencies\bitenginewin32\include\bt\system\memory.h(18): warning C4595: 'operator new[]': non-member operator new or delete functions may not be declared inline
+d:\githubbitengine\bitengine\dependencies\bitenginewin32\include\bt\system\memory.h(26): warning C4595: 'operator delete': non-member operator new or delete functions may not be declared inline
+d:\githubbitengine\bitengine\dependencies\bitenginewin32\include\bt\system\memory.h(34): warning C4595: 'operator delete[]': non-member operator new or delete functions may not be declared inline
+d:\githubbitengine\bitengine\dependencies\bitenginewin32\include\bt\utils\log.h(148): warning C4060: switch statement contains no 'case' or 'default' labels
+  SandBox.vcxproj -> D:\GitHubBitEngine\BitEngine\bin\Debug\SandBox.exe
+  SandBox.vcxproj -> D:\GitHubBitEngine\BitEngine\bin\Debug\SandBox.pdb (Partial PDB)

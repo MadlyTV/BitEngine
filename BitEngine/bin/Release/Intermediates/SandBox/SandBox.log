@@ -1,0 +1,12 @@
+﻿  main.cpp
+D:\GitHubBitEngine\BitEngine\Dependencies\BitEngineWin32\include\bt\system\Memory.h(8): warning C4615: #pragma warning: unknown user warning type
+D:\GitHubBitEngine\BitEngine\Dependencies\BitEngineWin32\include\bt\system\Memory.h(10): warning C4595: 'operator new': non-member operator new or delete functions may not be declared inline
+D:\GitHubBitEngine\BitEngine\Dependencies\BitEngineWin32\include\bt\system\Memory.h(18): warning C4595: 'operator new[]': non-member operator new or delete functions may not be declared inline
+D:\GitHubBitEngine\BitEngine\Dependencies\BitEngineWin32\include\bt\system\Memory.h(26): warning C4595: 'operator delete': non-member operator new or delete functions may not be declared inline
+D:\GitHubBitEngine\BitEngine\Dependencies\BitEngineWin32\include\bt\system\Memory.h(34): warning C4595: 'operator delete[]': non-member operator new or delete functions may not be declared inline
+D:\GitHubBitEngine\BitEngine\Dependencies\BitEngineWin32\include\bt\utils\Log.h(148): warning C4060: switch statement contains no 'case' or 'default' labels
+  Generating code
+  All 58 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  SandBox.vcxproj -> D:\GitHubBitEngine\BitEngine\bin\Release\SandBox.exe
+  SandBox.vcxproj -> D:\GitHubBitEngine\BitEngine\bin\Release\SandBox.pdb (Full PDB)

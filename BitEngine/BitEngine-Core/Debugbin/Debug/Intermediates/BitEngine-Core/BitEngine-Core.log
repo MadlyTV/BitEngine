@@ -1,0 +1,28 @@
+﻿G:\visual studio real\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(372,5): warning MSB8004: Intermediate Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Intermediate Directory.
+  MemoryManager.cpp
+d:\githubbitengine\bitengineworking\bitengine\bitengine-core\src\bt\system\memorymanager.cpp(1): fatal error C1083: Cannot open precompiled header file: 'Debugbin\Debug\Intermediates\BitEngine-Core\BTCore.pch': No such file or directory
+  Memory.cpp
+d:\githubbitengine\bitengineworking\bitengine\bitengine-core\src\bt\system\memory.cpp(1): fatal error C1083: Cannot open precompiled header file: 'Debugbin\Debug\Intermediates\BitEngine-Core\BTCore.pch': No such file or directory
+  Allocator.cpp
+d:\githubbitengine\bitengineworking\bitengine\bitengine-core\src\bt\system\allocator.cpp(1): fatal error C1083: Cannot open precompiled header file: 'Debugbin\Debug\Intermediates\BitEngine-Core\BTCore.pch': No such file or directory
+  String.cpp
+d:\githubbitengine\bitengineworking\bitengine\bitengine-core\src\bt\string.cpp(1): fatal error C1083: Cannot open precompiled header file: 'Debugbin\Debug\Intermediates\BitEngine-Core\BTCore.pch': No such file or directory
+  Win32Log.cpp
+d:\githubbitengine\bitengineworking\bitengine\bitengine-core\src\bt\platform\windows\win32log.cpp(1): fatal error C1083: Cannot open precompiled header file: 'Debugbin\Debug\Intermediates\BitEngine-Core\BTCore.pch': No such file or directory
+  vec4.cpp
+d:\githubbitengine\bitengineworking\bitengine\bitengine-core\src\bt\maths\vec4.cpp(1): fatal error C1083: Cannot open precompiled header file: 'Debugbin\Debug\Intermediates\BitEngine-Core\BTCore.pch': No such file or directory
+  vec3.cpp
+d:\githubbitengine\bitengineworking\bitengine\bitengine-core\src\bt\maths\vec3.cpp(1): fatal error C1083: Cannot open precompiled header file: 'Debugbin\Debug\Intermediates\BitEngine-Core\BTCore.pch': No such file or directory
+  vec2.cpp
+d:\githubbitengine\bitengineworking\bitengine\bitengine-core\src\bt\maths\vec2.cpp(1): fatal error C1083: Cannot open precompiled header file: 'Debugbin\Debug\Intermediates\BitEngine-Core\BTCore.pch': No such file or directory
+  Rectangle.cpp
+d:\githubbitengine\bitengineworking\bitengine\bitengine-core\src\bt\maths\rectangle.cpp(1): fatal error C1083: Cannot open precompiled header file: 'Debugbin\Debug\Intermediates\BitEngine-Core\BTCore.pch': No such file or directory
+  mat4.cpp
+d:\githubbitengine\bitengineworking\bitengine\bitengine-core\src\bt\maths\mat4.cpp(1): fatal error C1083: Cannot open precompiled header file: 'Debugbin\Debug\Intermediates\BitEngine-Core\BTCore.pch': No such file or directory
+  AABB.cpp
+d:\githubbitengine\bitengineworking\bitengine\bitengine-core\src\bt\maths\aabb.cpp(1): fatal error C1083: Cannot open precompiled header file: 'Debugbin\Debug\Intermediates\BitEngine-Core\BTCore.pch': No such file or directory
+  Event.cpp
+d:\githubbitengine\bitengineworking\bitengine\bitengine-core\src\bt\events\event.cpp(1): fatal error C1083: Cannot open precompiled header file: 'Debugbin\Debug\Intermediates\BitEngine-Core\BTCore.pch': No such file or directory
+  bt.cpp
+d:\githubbitengine\bitengineworking\bitengine\bitengine-core\src\bt\bt.cpp(1): fatal error C1083: Cannot open precompiled header file: 'Debugbin\Debug\Intermediates\BitEngine-Core\BTCore.pch': No such file or directory
+  Generating Code...
