@@ -10,14 +10,14 @@ namespace bt {
 
 #define BT_MEMORY_ALIGNMENT 16
 #define BT_ALLOC(size)	_aligned_malloc(size, BT_MEMORY_ALIGNMENT)
-#define BT_FREE(size)	_aligned_free(block);
+#define BT_FREE(block)	_aligned_free(block);
 
 	void* Allocator::Allocate(size_t size) {
 		BT_ASSERT(size < 1024 * 1024 * 1024);
 
-		bt::internal::MemoryManager::get()->m_MemoryStats.totalAllocated += size;
-		bt::internal::MemoryManager::get()->m_MemoryStats.currentUsed += size;
-		bt::internal::MemoryManager::get()->m_MemoryStats.totalAllocations++;
+		bt::internal::MemoryManager::Get()->m_MemoryStats.totalAllocated += size;
+		bt::internal::MemoryManager::Get()->m_MemoryStats.currentUsed += size;
+		bt::internal::MemoryManager::Get()->m_MemoryStats.totalAllocations++;
 
 		size_t actualSize = size + sizeof(size_t);
 		byte* result = (byte*)BT_ALLOC(actualSize);
@@ -37,8 +37,8 @@ namespace bt {
 	void Allocator::Free(void* block) {
 		byte* memory = ((byte*)block) - sizeof(size_t);
 		size_t size = *(size_t*)memory;
-		bt::internal::MemoryManager::get()->m_MemoryStats.totalFreed += size;
-		bt::internal::MemoryManager::get()->m_MemoryStats.currentUsed -= size;
+		bt::internal::MemoryManager::Get()->m_MemoryStats.totalFreed += size;
+		bt::internal::MemoryManager::Get()->m_MemoryStats.currentUsed -= size;
 		BT_FREE(memory);
 	}
 

@@ -13,132 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Header Files\src">
-      <UniqueIdentifier>{b963a536-1ebb-4b2d-830d-e2aac7c3bc88}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\src\graphics">
-      <UniqueIdentifier>{83359602-0fcf-4e35-9f4e-e55b5e96d802}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\src\graphics\2D">
-      <UniqueIdentifier>{9fef0be5-3419-4789-887f-2edcc00a2627}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\src\graphics\buffers">
-      <UniqueIdentifier>{ff76b68f-6f06-455e-816e-466a39d28171}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\src\graphics\layers">
-      <UniqueIdentifier>{817a3cce-df0f-48e6-8a01-86a0a623d6a9}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\src\graphics\3D">
-      <UniqueIdentifier>{e53f01cf-7e14-44fb-aab9-d5d064425cf4}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\src\maths">
-      <UniqueIdentifier>{b60c8bfe-60f3-4fbd-9ec6-007762797caf}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\src\utils">
-      <UniqueIdentifier>{67d759b9-7d20-4f9e-a7ca-0fa5ebdb727b}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\src">
-      <UniqueIdentifier>{d27388ae-ebae-43a7-8533-95bc681adc5a}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\src\graphics">
-      <UniqueIdentifier>{9aeacb53-1dea-41e3-bae5-2022565c60b6}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\src\graphics\2D">
-      <UniqueIdentifier>{99863761-6f28-40ba-ae14-630c0f0c3f1b}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\Exampel">
-      <UniqueIdentifier>{9f6a35c2-9c53-42b8-ab7b-2a0e26ac19d1}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\src\graphics\buffers">
-      <UniqueIdentifier>{3f0a950e-bf3d-4a81-aeb4-c0750a9ce611}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\src\graphics\layers">
-      <UniqueIdentifier>{cfd971c4-f369-497d-b5ac-513ccdc236f9}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\src\graphics\maths">
-      <UniqueIdentifier>{78fed578-9df5-4864-9ef9-06b6f3a97de0}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\src\graphics\3D">
-      <UniqueIdentifier>{ca857b33-2c78-49e0-ab0f-129fcb521e21}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\FREETYPE">
-      <UniqueIdentifier>{ac7337c1-0a86-46e0-aa81-e64101a8de0d}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\graphics\2D\batchrenderer2D.cpp">
-      <Filter>Source Files\src\graphics\2D</Filter>
-    </ClCompile>
-    <ClCompile Include="src\graphics\buffers\buffer.cpp">
-      <Filter>Source Files\src\graphics\buffers</Filter>
-    </ClCompile>
-    <ClCompile Include="src\graphics\buffers\indexbuffer.cpp">
-      <Filter>Source Files\src\graphics\buffers</Filter>
-    </ClCompile>
-    <ClCompile Include="src\graphics\buffers\vertexarray.cpp">
-      <Filter>Source Files\src\graphics\buffers</Filter>
-    </ClCompile>
-    <ClCompile Include="src\graphics\layers\group.cpp">
-      <Filter>Source Files\src\graphics\layers</Filter>
-    </ClCompile>
-    <ClCompile Include="src\maths\vec3.cpp">
-      <Filter>Source Files\src\graphics\maths</Filter>
-    </ClCompile>
-    <ClCompile Include="src\maths\vec4.cpp">
-      <Filter>Source Files\src\graphics\maths</Filter>
-    </ClCompile>
-    <ClCompile Include="src\maths\vec2.cpp">
-      <Filter>Source Files\src\graphics\maths</Filter>
-    </ClCompile>
-    <ClCompile Include="src\maths\AABB.cpp">
-      <Filter>Source Files\src\graphics\maths</Filter>
-    </ClCompile>
-    <ClCompile Include="src\maths\Rectangle.cpp">
-      <Filter>Source Files\src\graphics\maths</Filter>
-    </ClCompile>
-    <ClCompile Include="src\maths\mat4.cpp">
-      <Filter>Source Files\src\graphics\maths</Filter>
-    </ClCompile>
-    <ClCompile Include="src\graphics\window.cpp">
-      <Filter>Source Files\src\graphics</Filter>
-    </ClCompile>
-    <ClCompile Include="src\graphics\shader.cpp">
-      <Filter>Source Files\src\graphics</Filter>
-    </ClCompile>
-    <ClCompile Include="src\graphics\layers\layer.cpp">
-      <Filter>Source Files\src\graphics\layers</Filter>
-    </ClCompile>
-    <ClCompile Include="src\graphics\2D\sprite.cpp">
-      <Filter>Source Files\src\graphics\2D</Filter>
-    </ClCompile>
-    <ClCompile Include="src\graphics\2D\texture.cpp">
-      <Filter>Source Files\src\graphics\2D</Filter>
-    </ClCompile>
-    <ClCompile Include="src\graphics\camera\camera.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\graphics\camera\orthographicCamera.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\bt.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\String.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\bt\bt.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\bt\String.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\bt\system\Allocator.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\bt\system\Memory.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\bt\system\MemoryManager.cpp">
+    <ClCompile Include="src\bt\events\Event.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\bt\maths\AABB.cpp">
@@ -159,141 +36,96 @@
     <ClCompile Include="src\bt\maths\vec4.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\bt\events\Event.cpp">
+    <ClCompile Include="src\bt\platform\windows\Win32Log.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\bt\platform\windows\Win32Log.cpp">
+    <ClCompile Include="src\bt\system\Allocator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bt\system\Memory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bt\system\MemoryManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bt\bt.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bt\String.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bt\app\Application.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bt\app\Window.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bt\graphics\layers\Layer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bt\graphics\API\Context.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bt\app\Input.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bt\graphics\Renderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bt\platform\opengl\GLContext.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bt\platform\opengl\GLRenderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bt\events\WindowEvent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bt\system\System.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bt\system\VFS.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bt\system\FileSystem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bt\platform\windows\Win32MemoryManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bt\platform\windows\Win32Application.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bt\platform\windows\Win32Timer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bt\platform\windows\Win32FileSystem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bt\platform\windows\Win32Input.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bt\events\MouseEvent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bt\events\KeyEvent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bt\platform\windows\Win32Window.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bt\platform\opengl\GLError.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\graphics\2D\batchrenderer2D.h">
-      <Filter>Header Files\src\graphics\2D</Filter>
-    </ClInclude>
-    <ClInclude Include="src\graphics\buffers\buffer.h">
-      <Filter>Header Files\src\graphics\buffers</Filter>
-    </ClInclude>
-    <ClInclude Include="src\BitEngine.h">
-      <Filter>Header Files\src</Filter>
-    </ClInclude>
-    <ClInclude Include="src\graphics\buffers\indexbuffer.h">
-      <Filter>Header Files\src\graphics\buffers</Filter>
-    </ClInclude>
-    <ClInclude Include="src\graphics\buffers\vertexarray.h">
-      <Filter>Header Files\src\graphics\buffers</Filter>
-    </ClInclude>
-    <ClInclude Include="src\graphics\layers\group.h">
-      <Filter>Header Files\src\graphics\layers</Filter>
-    </ClInclude>
-    <ClInclude Include="src\graphics\layers\layer.h">
-      <Filter>Header Files\src\graphics\layers</Filter>
-    </ClInclude>
-    <ClInclude Include="src\graphics\2D\renderable2D.h">
-      <Filter>Header Files\src\graphics\2D</Filter>
-    </ClInclude>
-    <ClInclude Include="src\graphics\2D\sprite.h">
-      <Filter>Header Files\src\graphics\2D</Filter>
-    </ClInclude>
-    <ClInclude Include="src\graphics\2D\texture.h">
-      <Filter>Header Files\src\graphics\2D</Filter>
-    </ClInclude>
-    <ClInclude Include="src\graphics\2D\renderer2D.h">
-      <Filter>Header Files\src\graphics\2D</Filter>
-    </ClInclude>
-    <ClInclude Include="src\graphics\shader.h">
-      <Filter>Header Files\src\graphics</Filter>
-    </ClInclude>
-    <ClInclude Include="src\graphics\window.h">
-      <Filter>Header Files\src\graphics</Filter>
-    </ClInclude>
-    <ClInclude Include="src\maths\mat4.h">
-      <Filter>Header Files\src\maths</Filter>
-    </ClInclude>
-    <ClInclude Include="src\maths\maths.h">
-      <Filter>Header Files\src\maths</Filter>
-    </ClInclude>
-    <ClInclude Include="src\maths\maths_func.h">
-      <Filter>Header Files\src\maths</Filter>
-    </ClInclude>
-    <ClInclude Include="src\maths\AABB.h">
-      <Filter>Header Files\src\maths</Filter>
-    </ClInclude>
-    <ClInclude Include="src\maths\vec2.h">
-      <Filter>Header Files\src\maths</Filter>
-    </ClInclude>
-    <ClInclude Include="src\maths\vec3.h">
-      <Filter>Header Files\src\maths</Filter>
-    </ClInclude>
-    <ClInclude Include="src\maths\vec4.h">
-      <Filter>Header Files\src\maths</Filter>
-    </ClInclude>
-    <ClInclude Include="src\maths\Rectangle.h">
-      <Filter>Header Files\src\maths</Filter>
-    </ClInclude>
-    <ClInclude Include="src\utils\imageload.h">
-      <Filter>Header Files\src\utils</Filter>
-    </ClInclude>
-    <ClInclude Include="src\utils\FileUtils.h">
-      <Filter>Header Files\src\utils</Filter>
-    </ClInclude>
-    <ClInclude Include="src\utils\timer.h">
-      <Filter>Header Files\src\utils</Filter>
-    </ClInclude>
-    <ClInclude Include="src\graphics\camera\camera.h">
+    <ClInclude Include="src\bt\events\Event.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\graphics\camera\orthographicCamera.h">
+    <ClInclude Include="src\bt\events\EventDispatcher.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\Logger\logger.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\utils\time.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\bt.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\common.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\String.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\types.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\bt\utils\time.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\bt\utils\timer.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\bt\bt.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\bt\common.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\bt\String.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\bt\types.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\BitEngine.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\bt\system\Allocator.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\bt\system\Memory.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\bt\system\MemoryManager.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\bt\utils\Log.h">
+    <ClInclude Include="src\bt\events\Events.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\bt\maths\AABB.h">
@@ -320,24 +152,95 @@
     <ClInclude Include="src\bt\maths\vec4.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\bt\events\EventDispatcher.h">
+    <ClInclude Include="src\bt\system\Allocator.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\bt\events\Events.h">
+    <ClInclude Include="src\bt\system\Memory.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\bt\events\Event.h">
+    <ClInclude Include="src\bt\system\MemoryManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bt\utils\Log.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bt\utils\time.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bt\utils\timer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bt\bt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bt\common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bt\String.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bt\types.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\BitEngine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bt\app\Application.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bt\app\Window.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bt\graphics\layers\Layer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bt\utils\Timestep.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bt\graphics\API\Context.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bt\app\Input.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bt\graphics\Renderer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bt\platform\opengl\GLContext.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bt\platform\opengl\GLCommon.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bt\platform\opengl\GLRenderer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bt\events\IEventListener.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bt\events\WindowEvent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bt\maths\tvec2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bt\system\System.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bt\system\VFS.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bt\system\FileSystem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bt\events\MouseEvent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bt\events\KeyEvent.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="src\shaders\standard.frag" />
-    <None Include="src\shaders\standard.vert" />
-    <None Include="assimp.dll" />
-    <None Include="assimp.exe" />
-    <None Include="assimp_viewer.exe" />
-  </ItemGroup>
-  <ItemGroup>
-    <Font Include="arial.ttf" />
+    <Text Include="src\BitEngineCore-TODO.txt" />
   </ItemGroup>
 </Project>

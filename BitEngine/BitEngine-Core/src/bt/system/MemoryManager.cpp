@@ -12,7 +12,7 @@ namespace bt { namespace internal {
 
 	}
 
-	void MemoryManager::init() {
+	void MemoryManager::Init() {
 
 	}
 
@@ -20,7 +20,7 @@ namespace bt { namespace internal {
 		btdel s_Instance;
 	}
 
-	MemoryManager* MemoryManager::get() {
+	MemoryManager* MemoryManager::Get() {
 		if (s_Instance == nullptr) {
 			s_Instance = (MemoryManager*)malloc(sizeof(MemoryManager));
 			s_Instance = new(s_Instance)MemoryManager();
