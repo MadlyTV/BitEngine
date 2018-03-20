@@ -22,12 +22,7 @@ namespace bt {namespace maths {
 	{}
 
 	bool Rectangle::Intersects(const Rectangle& other) const {
-		if (position.x < other.x + other.width && position.x + width > other.position.x && position.y < other.position.y + other.height && height + position.y > other.y) {
-			return true;
-		}
-		else {
-			return false;
-		}
+		return (position.x < other.x + other.width && position.x + width > other.position.x && position.y < other.position.y + other.height && height + position.y > other.y) ? true : false;
 	}
 
 	bool Rectangle::Contains(const vec2& point) const {

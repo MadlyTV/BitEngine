@@ -1,56 +1,11 @@
-﻿G:\visual studio real\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(372,5): warning MSB8004: Intermediate Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Intermediate Directory.
-  Application.cpp
-D:\GitHubBitEngine\BitEngine\BitEngine-Core\src\bt\system\Memory.h(8): warning C4615: #pragma warning: unknown user warning type
-  Input.cpp
-  Window.cpp
-  bt.cpp
-  Event.cpp
-  KeyEvent.cpp
-  MouseEvent.cpp
-  WindowEvent.cpp
-  Context.cpp
-D:\GitHubBitEngine\BitEngine\BitEngine-Core\src\bt\system\Memory.h(8): warning C4615: #pragma warning: unknown user warning type
-  Layer.cpp
-  Renderer.cpp
-D:\GitHubBitEngine\BitEngine\BitEngine-Core\src\bt\system\Memory.h(8): warning C4615: #pragma warning: unknown user warning type
-  AABB.cpp
-  mat4.cpp
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(376,5): warning MSB8004: Intermediate Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Intermediate Directory.
   Rectangle.cpp
-  vec2.cpp
-  vec3.cpp
-  vec4.cpp
-  GLContext.cpp
-  GLError.cpp
-  GLRenderer.cpp
-  Win32Application.cpp
-  Win32FileSystem.cpp
-D:\GitHubBitEngine\BitEngine\BitEngine-Core\src\bt\system\Memory.h(8): warning C4615: #pragma warning: unknown user warning type
-  Win32Input.cpp
-  Win32Log.cpp
-  Win32MemoryManager.cpp
-  Win32Timer.cpp
-  Win32Window.cpp
-  String.cpp
-  Allocator.cpp
-  FileSystem.cpp
-  Memory.cpp
-d:\githubbitengine\bitengine\bitengine-core\src\bt\system\Memory.h(8): warning C4615: #pragma warning: unknown user warning type
-  MemoryManager.cpp
-d:\githubbitengine\bitengine\bitengine-core\src\bt\system\Memory.h(8): warning C4615: #pragma warning: unknown user warning type
-  System.cpp
-  VFS.cpp
-d:\githubbitengine\bitengine\bitengine-core\src\bt\system\Memory.h(8): warning C4615: #pragma warning: unknown user warning type
-LINK : warning C4727: PCH named d:\githubbitengine\bitengine\bitengine-core\releasebin\release\intermediates\bitengine-core\btcore.pch with same timestamp found in d:\githubbitengine\bitengine\bitengine-core\releasebin\release\intermediates\bitengine-core\bt.obj and d:\githubbitengine\bitengine\bitengine-core\releasebin\release\intermediates\bitengine-core\window.obj.  Using first PCH.
-LINK : warning C4727: PCH named d:\githubbitengine\bitengine\bitengine-core\releasebin\release\intermediates\bitengine-core\btcore.pch with same timestamp found in d:\githubbitengine\bitengine\bitengine-core\releasebin\release\intermediates\bitengine-core\windowevent.obj and d:\githubbitengine\bitengine\bitengine-core\releasebin\release\intermediates\bitengine-core\mouseevent.obj.  Using first PCH.
-LINK : warning C4727: PCH named d:\githubbitengine\bitengine\bitengine-core\releasebin\release\intermediates\bitengine-core\btcore.pch with same timestamp found in d:\githubbitengine\bitengine\bitengine-core\releasebin\release\intermediates\bitengine-core\mat4.obj and d:\githubbitengine\bitengine\bitengine-core\releasebin\release\intermediates\bitengine-core\aabb.obj.  Using first PCH.
-LINK : warning C4727: PCH named d:\githubbitengine\bitengine\bitengine-core\releasebin\release\intermediates\bitengine-core\btcore.pch with same timestamp found in d:\githubbitengine\bitengine\bitengine-core\releasebin\release\intermediates\bitengine-core\vec4.obj and d:\githubbitengine\bitengine\bitengine-core\releasebin\release\intermediates\bitengine-core\vec3.obj.  Using first PCH.
-LINK : warning C4727: PCH named d:\githubbitengine\bitengine\bitengine-core\releasebin\release\intermediates\bitengine-core\btcore.pch with same timestamp found in d:\githubbitengine\bitengine\bitengine-core\releasebin\release\intermediates\bitengine-core\glrenderer.obj and d:\githubbitengine\bitengine\bitengine-core\releasebin\release\intermediates\bitengine-core\glerror.obj.  Using first PCH.
-LINK : warning C4727: PCH named d:\githubbitengine\bitengine\bitengine-core\releasebin\release\intermediates\bitengine-core\btcore.pch with same timestamp found in d:\githubbitengine\bitengine\bitengine-core\releasebin\release\intermediates\bitengine-core\memory.obj and d:\githubbitengine\bitengine\bitengine-core\releasebin\release\intermediates\bitengine-core\filesystem.obj.  Using first PCH.
-     Creating library D:\GitHubBitEngine\BitEngine\bin\Release\BTCore.lib and object D:\GitHubBitEngine\BitEngine\bin\Release\BTCore.exp
+     Creating library C:\Users\victor.matisic\Desktop\githubbitengine\BitEngine\BitEngine\bin\Release\BTCore.lib and object C:\Users\victor.matisic\Desktop\githubbitengine\BitEngine\BitEngine\bin\Release\BTCore.exp
 LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
   Generating code
-  All 1385 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  1 of 1399 functions ( 0.1%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
-glew32s.lib(glew.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'glew32s.lib(glew.obj)' or at 'D:\GitHubBitEngine\BitEngine\bin\Release\vc120.pdb'; linking object as if no debug info
-  BitEngine-Core.vcxproj -> D:\GitHubBitEngine\BitEngine\bin\Release\BTCore.dll
-  BitEngine-Core.vcxproj -> D:\GitHubBitEngine\BitEngine\bin\Release\BTCore.pdb (Full PDB)
+glew32s.lib(glew.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'glew32s.lib(glew.obj)' or at 'C:\Users\victor.matisic\Desktop\githubbitengine\BitEngine\BitEngine\bin\Release\vc120.pdb'; linking object as if no debug info
+  BitEngine-Core.vcxproj -> C:\Users\victor.matisic\Desktop\githubbitengine\BitEngine\BitEngine\bin\Release\BTCore.dll
